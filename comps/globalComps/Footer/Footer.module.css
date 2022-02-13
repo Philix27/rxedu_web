@@ -1,0 +1,41 @@
+.container {
+  /* background-color: #4642f8; */
+  /* background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)); */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 50px;
+  justify-content: center;
+  justify-items: center;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.list_headers {
+  font-weight: 600;
+}
+
+.contact_list{padding: 15px;}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img {
+    display: none;
+  }
+}
