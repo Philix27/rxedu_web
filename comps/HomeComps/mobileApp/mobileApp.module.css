@@ -40,6 +40,27 @@
     margin: auto 20px;
 }
 
+.btn a{
+  color:  #fff;
+
+}
+
+.btn{
+  width: 150px;
+  height: 30px;
+  /* margin: 20px 0; */
+  background-color: rgb(6, 116, 143);
+  color:  #fff;
+  font-size: 1.3rem;
+  padding: 7px, 12px;
+    border-radius: 50px;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+   cursor: pointer;
+  transition: 0.5s ease;
+}
+
 @media(max-width: 700px) {
     .content{
       grid-template-columns: repeat(1, 1fr);

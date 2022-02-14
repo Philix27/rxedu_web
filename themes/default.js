@@ -13,7 +13,7 @@ export default {
     // accent1: "hsl(34.9,98.6%,72.9%)",
     accent1: "#f4f5f7",
     button: "hsl(205.1,100%,36.1%)",
-    background2: "#010b26",
+    background2: "rgb(6, 116, 143)",
   },
   // Breakpoints for responsive design
   breakpoints: {

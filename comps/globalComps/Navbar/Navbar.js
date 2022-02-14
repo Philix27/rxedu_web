@@ -30,10 +30,10 @@ export default function Navbar() {
                             </div>
                         </li>
                         <li className={styles.nav_start_list_item}><Link href="/"><a className={styles.link}>Home</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="#about"><a className={styles.link}>About</a></Link></li>
-                        <li className={styles.nav_start_list_item}><Link href="/project"><a className={styles.link}>Projects</a></Link></li>
+                        <li className={styles.nav_start_list_item}><Link href="#courses"><a className={styles.link}>Courses</a></Link></li>
+                        <li className={styles.nav_start_list_item}><Link href="#team"><a className={styles.link}>Team</a></Link></li>
                         {/* <li className={styles.nav_start_list_item}><Link href="/products"><a className={styles.link}>Products</a></Link></li> */}
-                        <li className={styles.nav_start_list_item}><Link href="#blogs"><a className={styles.link}>Blogs</a></Link></li>
+                        {/* <li className={styles.nav_start_list_item}><Link href="#blogs"><a className={styles.link}>Blogs</a></Link></li> */}
                         {/* <li className={styles.nav_start_list_item}><Link href="/blog"><a className={styles.link}>Blog</a></Link></li> */}
                         {/* <li className={styles.nav_start_list_item}><Link href="/products"><a className={styles.link}>Services</a></Link></li> */}
                         {/* <li className={styles.nav_start_list_item}><Link href="/edu"><a className={styles.link}>Education</a></Link></li> */}

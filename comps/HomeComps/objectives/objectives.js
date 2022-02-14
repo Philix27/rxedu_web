@@ -16,15 +16,13 @@ export default function Objectives() {
                
                 <div >
                     <SectionJumbotron>
-                        I am a dedicated developer who aims at making my community
-                        and the world a better place through the use of Technology.
-
+                       An Educaational platform for Pharmacists preparing for various exams.
+                       Contains MCQs, and related materials need to ace pharmaceutical exams.
                     </SectionJumbotron>      
                 </div>
                 <div >
                     <SectionJumbotron>
-                        An Educaational App for Pharmacists preparing for various exams.
-                        Contains MCQs, and related materials need to ace pharmaceutical exams.
+                       Covers both undergraduate and post graduate courses. 
                     </SectionJumbotron>      
                 </div>
             </div>           

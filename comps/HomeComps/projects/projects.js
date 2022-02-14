@@ -12,7 +12,7 @@ import { Section, SectionTitle, SectionText } from '../../../styles';
 
 export default function Projects() {
     return (
-        <Section id="projects">
+        <Section id="courses">
         {/* <div className={styles.container}> */}
             {/* <h1 className="h3d">Our Goal</h1> */}
           <SectionTitle>Courses</SectionTitle>

@@ -1,5 +1,4 @@
 import {HomeLanding} from '../comps/HomeComps/Landing/Landing'
-import About from '../comps/HomeComps/AboutUs/About'
 import Objectives from '../comps/HomeComps/objectives/objectives'
 import Projects from '../comps/HomeComps/projects/projects'
 import Products from '../comps/HomeComps/products/products'
@@ -14,7 +13,6 @@ export default function Home() {
       <Products />
       <Projects />
       <MobileApp/>
-      {/* <About/> */}
     </>
   )
 }

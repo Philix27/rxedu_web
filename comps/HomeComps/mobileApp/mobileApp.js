@@ -25,7 +25,12 @@ export default function MobileApp() {
                     <SectionText>
                          Download the mobile app to get the most out of this platform.
                         More convinence and you can easily save your progress as you learn.
-                    </SectionText>      
+                    </SectionText>    
+                    
+                    <div className={styles.btn}>
+                        <a href='https://play.google.com/store/apps/details?id=com.philix.rxedu'
+                            download="philix_cv">Download App</a>
+                    </div>
                 </div>
             </div>
           
