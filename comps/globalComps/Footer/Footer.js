@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
 import { Section, Linka } from './footerStyles';
-import { FaWhatsapp } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 import { IoLogoGoogle } from 'react-icons/io'
 
