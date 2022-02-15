@@ -2,15 +2,8 @@ import React from 'react'
 import styles from './Footer.module.css'
 import { Section, Linka } from './footerStyles';
 import { FaWhatsapp } from 'react-icons/fa'
-import {
-    AiOutlineMail,
-    AiFillGithub,
-    AiFillLinkedin,
-    AiFillFacebook,
-    AiFillTwitterSquare,
-    AiFillPhone,
-    // AiFillTwitter
-} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
+import { IoLogoGoogle } from 'react-icons/io'
 
 export default function Footer() {
     return (
@@ -41,7 +34,7 @@ export default function Footer() {
                         </Linka>
                     </li>
                     <li>
-                        <Linka  target="_blank" href="mailto:philixbob@gmail.com">
+                        <Linka  target="_blank" href="mailto:rxedu.online@gmail.com">
                             <AiOutlineMail size={15} />
                             <span className={styles.contact_list}>Email</span>
                         </Linka>
@@ -50,7 +43,7 @@ export default function Footer() {
                         <Linka
                             target="_blank"
                             href="https://wa.me/2348108850572?text=Hi+Philix%2C+I%27m+just+visited+your+website.">
-                            <FaWhatsapp size={15} />
+                            <IoLogoGoogle size={15} />
                             <span className={styles.contact_list}>Playstore</span>
                         </Linka>
                     </li>

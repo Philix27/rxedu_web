@@ -77,12 +77,12 @@
     visibility: collapse;
     left: 60%;
     color: #fff;
-    background-color: #053f61c5;
+    background-color: #053f61dc;
     width: 40%;
     height: 100%;
     margin: 0;
-    transition: all 0.5s ease-in-out;
-    /* transform: translateX(-500px); */
+    transition: all 2s ease-in-out;
+    transform: translateX(0px);
   }
 
   /* .nav_bg.show{
@@ -137,8 +137,8 @@
 
   .check:checked ~ * .nav_bg {
     visibility: visible;
-    transition: all 0.5s ease-in-out;
-    /* transform: translateX(500px); */
+    transition: all 1s ease-in-out;
+    transform: translateX(500px);
   }
 }
 

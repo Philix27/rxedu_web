@@ -13,8 +13,6 @@ import { Section, SectionTitle, SectionText } from '../../../styles';
 export default function Projects() {
     return (
         <Section id="courses">
-        {/* <div className={styles.container}> */}
-            {/* <h1 className="h3d">Our Goal</h1> */}
           <SectionTitle>Courses</SectionTitle>
         
              <GridContainer>
@@ -32,7 +30,8 @@ export default function Projects() {
           className={styles.card}
           initial={{ x: "-100vw", opacity: 0.1 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{duration: 1.7, delay: 1, type: "tween", }}>
+          transition={{duration: 1.7, delay: 1,  }}>
+          {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
           {/* transition={{duration: 1.7, delay: 1, type: "spring", stiffness:"110"}}> */}
           {/* <Image src={image} width={500} height={300}/> */}
           <a href={visit} target="_blank"><Img src={image} /></a>
