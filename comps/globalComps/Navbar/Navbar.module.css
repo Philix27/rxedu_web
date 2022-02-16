@@ -71,6 +71,10 @@
     display: none;
   }
 
+  .nav{
+    background-color: rgb(6, 116, 143);
+    /* background-color: transparent; */
+  }
   .nav_bg {
     position: fixed;
     top: 0;

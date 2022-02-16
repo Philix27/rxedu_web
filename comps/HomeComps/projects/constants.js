@@ -4,8 +4,8 @@ export const projects = [
     description: "An android app for Delta State University Students, (Nigeria). Contains an e-commerce section and a news section ",
       image: '/images/project/cology.jpg',
       tags: ['Dart', 'Flutter', 'Firebase', ],
-    source: '#',
-    visit: '#',
+    source: '/cology',
+    visit: '/courses/cology',
     id: 0,
   },
   {

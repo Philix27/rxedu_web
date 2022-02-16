@@ -3,7 +3,7 @@ import React from 'react'
 import styles from './Landing.module.css'
 import {Section, Content, SectionTitle, Img, Linka } from './LandingStyles'
 
-export const HomeLanding = () => {
+export default function LandingPage() {
 
     return (
       <div id='home' className={styles.container}> 
