@@ -7,11 +7,15 @@ export default function CourseLanding({title, subtitle, bgImg}) {
 
     return (
       <Section > 
-        <SectionTitle>Pharmacology Topics</SectionTitle>
         <div className={styles.imgWrapper}>
-        <Image  src='/images/dark.jpg'  objectFit='cover' layout='fill' />
+          <Image src='/images/dark.jpg'
+            objectFit='cover'
+            layout='responsive'
+            height="300"
+            width="440px" />
 
         </div>
+        {/* <SectionTitle>Pharmacology Topics</SectionTitle> */}
       </Section>
     )
 }
