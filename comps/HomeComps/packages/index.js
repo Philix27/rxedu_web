@@ -1,22 +1,23 @@
 // import Image from 'next/image';
 import React from 'react'
 import {motion} from 'framer-motion'
-import styles from './products.module.css'
-import { productsList } from './productsConstants';
-import {  BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './productsStyles';
+import styles from './styles.module.css'
+import { productsList } from './constants';
+import {  GridContainer, HeaderThree,  TitleContent, } from './styles';
 import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
-export default function Products() {
+export default function Packages() {
     return (
         <Section id="products">
        
-          <SectionTitle>Structures</SectionTitle>
+          <SectionTitle>Packages</SectionTitle>
         
              <GridContainer>
       {productsList.map(({
     title,
-    description,
+        description,
+    url,
     icon,
     id,
   }) => (

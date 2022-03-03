@@ -3,26 +3,23 @@ import styled from 'styled-components';
 export const Img = styled.img`
   /* width:100px; */
   width:100%;
+  /* max-height: 80%; */
   height:100%;
   object-fit: cover;
   /* overflow: hidden; */
-  border-radius: 10px;
 `
 
 export const GridContainer = styled.section`
 display: grid;
  grid-template-columns: repeat(3, 1fr);
+/* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
 padding: 3rem;
-/* place-items: center; */
+align-self: center;
+align-content: center;
 column-gap: 2rem;
 row-gap: 3rem;
-padding-bottom: 0;
+/* padding-bottom: 10; */
 
-@media ${(props) => props.theme.breakpoints.lg} {
-  grid-template-columns: repeat(2, 1fr);
-  padding: 2rem;
-  padding-bottom: 0;
-}
 @media ${(props) => props.theme.breakpoints.md} {
    grid-template-columns: repeat(2, 1fr);
      padding: 2rem;
@@ -94,34 +91,3 @@ export const CardInfo = styled.p`
 `;
 
 
-export const UtilityList = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-  margin: 2.5rem 0;
-`;
-
-export const ExternalLinks = styled.a`
-color:#d4c0c0;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #6b3030;
-border-radius: 15px;
-transition: 0.5s;
-&:hover{
-  background: #801414;
-
-}
-`;
-
-export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
-`
-export const Tag = styled.li`
-/* color: #d8bfbf; */
-font-size: 1.8rem;
-padding-right: 8px;
-`

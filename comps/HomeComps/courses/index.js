@@ -4,18 +4,15 @@ import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './projects.module.css'
-import {FaGithub, FaHourglassEnd } from 'react-icons/fa'
 import { projects } from './constants';
-import {  BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './projectsStyles';
-import { Section, SectionTitle, SectionText } from '../../styles';
+import {   GridContainer, HeaderThree,  TitleContent, Img } from './projectsStyles';
+import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
 export default function Projects() {
     return (
-        <Section id="projects">
-        {/* <div className={styles.container}> */}
-            {/* <h1 className="h3d">Our Goal</h1> */}
-          <SectionTitle>Products</SectionTitle>
+        <Section id="courses">
+          <SectionTitle>Courses</SectionTitle>
         
              <GridContainer>
       {projects.map(({
@@ -32,10 +29,10 @@ export default function Projects() {
           className={styles.card}
           initial={{ x: "-100vw", opacity: 0.1 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{duration: 1.7, delay: 1, type: "tween", }}>
-          {/* transition={{duration: 1.7, delay: 1, type: "spring", stiffness:"110"}}> */}
+          transition={{duration: 1.7, delay: 1, type: "spring", stiffness:"110"}}> 
+          {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
           {/* <Image src={image} width={500} height={300}/> */}
-          <a href={visit} target="_blank"><Img src={image} /></a>
+          <Link href={visit} target="_blank"><Img src={image} /></Link>
         {/* <BlogCard> */}
         <TitleContent>
           <HeaderThree >{title}</HeaderThree>
@@ -44,16 +41,7 @@ export default function Projects() {
             <SectionText>{description}</SectionText>
             {/* <CardInfo>{description}</CardInfo> */}
         </div>
-        <div>
-          {/* <TitleContent>Stack</TitleContent> */}
-          <TagList>
-            {
-              tags.map((tag, i) => (
-                <Tag key = {i}>{tag} |</Tag>
-              ))
-            }
-          </TagList>
-        </div>
+       
        {/* </BlogCard> */}
        </motion.div>
       ))}

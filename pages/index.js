@@ -1,7 +1,7 @@
 import HomeLanding from '../comps/HomeComps/Landing/Landing'
 import Objectives from '../comps/HomeComps/objectives/objectives'
-import Projects from '../comps/HomeComps/projects/projects'
-import Products from '../comps/HomeComps/products/products'
+import Courses from '../comps/HomeComps/courses'
+import Packages from '../comps/HomeComps/packages'
 import MobileApp from '../comps/HomeComps/mobileApp/mobileApp'
 
   
@@ -10,8 +10,8 @@ export default function Home() {
     < >    
       <HomeLanding />
       <Objectives/>
-      <Products />
-      <Projects />
+      <Packages />
+      <Courses />
       <MobileApp/>
     </>
   )

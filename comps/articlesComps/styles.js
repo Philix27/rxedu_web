@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const GridContainer = styled.section`
 display: grid;
- grid-template-columns: repeat(4, 1fr);
+ grid-template-columns: repeat(2, 1fr);
 /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
 padding: 3rem;
 align-self: center;

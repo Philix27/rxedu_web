@@ -1,4 +1,4 @@
-import Layout from '../comps/Layout'
+import Layout from '../comps/globalComps/Layout'
 import Theme from '../styles/theme';
 
 
