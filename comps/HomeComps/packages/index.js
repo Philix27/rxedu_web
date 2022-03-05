@@ -1,5 +1,6 @@
 // import Image from 'next/image';
 import React from 'react'
+import Link from 'next/link';
 import {motion} from 'framer-motion'
 import styles from './styles.module.css'
 import { productsList } from './constants';
@@ -20,7 +21,8 @@ export default function Packages() {
     url,
     icon,
     id,
-  }) => (
+      }) => (
+         <Link href={`${url}`}>
         <motion.div
           key={id}
           className={styles.card}
@@ -37,6 +39,7 @@ export default function Packages() {
             <SectionText>{description}</SectionText>
           </div>       
        </motion.div>
+          </Link>
       ))}
     </GridContainer>
             <br/>

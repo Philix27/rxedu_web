@@ -5,9 +5,9 @@ import styles from './quizpage.module.css'
         const { question, options, category, explain, answer_index } = quest;
         // const option = options.toList;
         return (
-            <div className="section">
-                <div className={styles.questNum}>
-                    <h2 className={styles.title}>{index} / {length }</h2>
+            <div className={styles.questionContainer}>
+                <div className={styles.questionHeader}>
+                    <h2 className={styles.questionCounter}>{index} / {length }</h2>
                     <h2 className={styles.question}>{question}</h2>
                 </div>
                     {options.map((option, i) => {

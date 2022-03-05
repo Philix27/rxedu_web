@@ -4,13 +4,12 @@ import {AiOutlinePicture } from 'react-icons/ai'
 import {BsQuestionSquare } from 'react-icons/bs'
 
 import styles from './styles.module.css'
-
 export const productsList = [
   {
     title: 'MCQs',
     icon:  (<BsQuestionSquare className={styles.icon} />),
     description: "An android app for Delta State University Students, (Nigeria). Contains an e-commerce section and a news section ",
-    url: '#',
+    url: '/quiz/',
     id: 0,
   },
   {
@@ -31,7 +30,7 @@ export const productsList = [
     title: 'Articles',
      icon:  (<BiNotepad className={styles.icon} />),
     description: "An Educaational App for Pharmacists preparing for various exams.",
-    url: '#',
+    url: '/articles',
     id: 2,
   },
 

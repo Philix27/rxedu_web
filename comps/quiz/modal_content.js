@@ -1,5 +1,4 @@
 import styles from './quizpage.module.css'
-import { Heading1 } from '../../styles/Elements';
 import React,  {useState} from 'react';
 
                         
@@ -7,12 +6,6 @@ export const ModalContent = (
     {
         setQues,
         ques,
-         // setShowModal,
-         // setCategory,
-         // setQuestion,
-         // setOptions,
-         // setExplain,
-        // setAnswerIndex, 
         title,
         setShowModal,
         showModal,
@@ -49,7 +42,7 @@ export const ModalContent = (
     return (
         <div >
                 <div className={styles.header_box}>
-                    <Heading1>{title}</Heading1>
+                    <h1>{title}</h1>
                 </div>
             <form action="#" className={styles.wrapper}>
 

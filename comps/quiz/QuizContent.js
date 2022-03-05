@@ -2,14 +2,18 @@ import React,  {useState, useEffect, useMemo} from 'react';
 import Axios from 'axios';
 // import {BASEURL, API_VERSION} from '../Essentials/baseurl'
 import { AddToTable } from './AddToTable';
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../articlesComps/Modal/Modal';
 import {ModalContent} from './modal_content'
 import QuestSection from './quest_section';
+import { useRouter } from 'next/router';
 import styles from './quizpage.module.css'
 
 
+
 const QuizContent = () => {
-    
+    const router = useRouter();
+    const categoryName = router.query.categoryName;
+
     // const apiurlLocal = BASEURL + API_VERSION + 'mcq_pcl';
     const apiurlLocal = "http://localhost:3007/api/v1/mcq";
     // const apiurlLocal = "http://localhost:3007/api/v1/mcq_pcl";
@@ -44,9 +48,10 @@ const QuizContent = () => {
     useEffect(() => {
         Axios.get(apiurlLocal).then((response) => {
            
-            setQuizList(response.data.mcq_pcl);
+            setQuizList(response.data.mcq);
             console.log("Working");
-            console.log(response.data.mcq_pcl);
+            console.log(`Length: ${response.data.mcq.length}`);
+            console.log(response.data.mcq);
       }).catch(() => {
         console.log("Opps an error ocured - Local");
       });
@@ -80,13 +85,20 @@ const QuizContent = () => {
         
     }
   
+      var categoryBasedQuestionsList = [];
+    quizList.forEach((value, index) => {
+        if (value.category === categoryName) {
+            categoryBasedQuestionsList.push(value)
+        }
+    }); 
+
     return (
         <>             
            
             {showModal && <Modal
                 showModal={showModal}
                 setShowModal={setShowModal}
-                title="Add a questiont"
+                title="Add a question"
                 children={
                     <ModalContent
                         setQues={setQues}
@@ -101,7 +113,7 @@ const QuizContent = () => {
   
            
              
-            {quizList.map((quest, index) => { 
+            {categoryBasedQuestionsList.map((quest, index) => { 
                 if (index === quesIndex) {
                     return (
                         <QuestSection
@@ -109,7 +121,7 @@ const QuizContent = () => {
                         key={index}
                         quest={quest}
                         index={index + 1}
-                        length={quizList.length} />);
+                        length={categoryBasedQuestionsList.length} />);
                 } 
             })}
 
