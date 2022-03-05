@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link'
 import Axios from 'axios';
-import {CardItem, GridContainer} from '../quiz/styles'
+import {CardItem, GridContainer, IndexSpan} from '../quiz/styles'
 
-const QuizCategory = () => {
+const QuizCategory = ({apiCategory}) => {
     
-    // const apiurlLocal = BASEURL + API_VERSION + 'mcq_pcl';
-    const apiurlLocal = "http://localhost:3007/api/v1/mcq";
+    // const apiurlLocal = process.env.BASEURL + process.env.API_VERSION + 'mcq';
+    const apiurlLocal = `http://localhost:3007/api/v1/${apiCategory}`;
+    // const apiurlLocal = "http://localhost:3007/api/v1/mcq";
     // const apiurlLocal = "http://localhost:3007/api/v1/mcq_pcl";
 
     const [quizList, setQuizList] =  useState([]);
@@ -41,8 +42,11 @@ const QuizCategory = () => {
             {categoryList.map((categoryItem, index) => { 
                 
                 return (
-                    <Link href={`/quiz/${categoryItem}`}>
-                        <CardItem> {categoryItem} </CardItem>
+                    <Link href={`/quiz/${categoryItem}`} key={index}>
+                        <CardItem>
+                            <IndexSpan>{index + 1}.</IndexSpan>
+                            {categoryItem.toUpperCase()}
+                        </CardItem>
                     </Link>
                 ); 
             })}

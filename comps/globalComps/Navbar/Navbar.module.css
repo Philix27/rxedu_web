@@ -1,7 +1,9 @@
 .nav {
   height: 50px;
   align-items: center;
-  background-color: #012f3b63;
+  /* background-color: #012f3b63; */
+  background-color: rgb(6, 116, 143);
+
   /* background-image: linear-gradient(rgba(4,9,30,0.5), rgba(4,9,30,0.5)); */
   display: flex;
   width: 100%;

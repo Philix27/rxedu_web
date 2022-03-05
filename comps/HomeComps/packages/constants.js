@@ -31,7 +31,7 @@ export const productsList = [
      icon:  (<BiNotepad className={styles.icon} />),
     description: "An Educaational App for Pharmacists preparing for various exams.",
     url: '/articles',
-    id: 2,
+    id: 3,
   },
 
 ];

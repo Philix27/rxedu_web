@@ -61,7 +61,7 @@
   border: none;
   background: #c2e5f0;
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 1.6rem;
   padding: 0px 15px;
   /* margin: 10px 0; */
 }
@@ -132,8 +132,22 @@
   padding: 20px;
 }
 
+
+.addQuestionButton{
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1040px) {
+   .addQuestionButton{
+    display: none;
+  }
+}
+
 @media (max-width: 700px) {
-  .card {
+   .card {
     max-width: 80%; 
   }
 

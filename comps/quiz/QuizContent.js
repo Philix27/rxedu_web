@@ -1,7 +1,6 @@
 import React,  {useState, useEffect, useMemo} from 'react';
 import Axios from 'axios';
-// import {BASEURL, API_VERSION} from '../Essentials/baseurl'
-import { AddToTable } from './AddToTable';
+import { AddQuestionBtn } from './addQuestionBtn';
 import { Modal } from '../articlesComps/Modal/Modal';
 import {ModalContent} from './modal_content'
 import QuestSection from './quest_section';
@@ -16,6 +15,7 @@ const QuizContent = () => {
 
     // const apiurlLocal = BASEURL + API_VERSION + 'mcq_pcl';
     const apiurlLocal = "http://localhost:3007/api/v1/mcq";
+    const apiurlLocalPost = "http://localhost:3007/api/v1/mcq_pep";
     // const apiurlLocal = "http://localhost:3007/api/v1/mcq_pcl";
 
     const [quizList, setQuizList] =  useState([]);
@@ -38,12 +38,6 @@ const QuizContent = () => {
         
     });
 
-    // const [category, setCategory] = useState('');
-    // const [question, setQuestion] = useState('');
-    // const [explain, setExplain] = useState('');
-    // const [options, setOptions] = useState('');
-    // const [answer_index, setanswer_index] = useState('');
-
     
     useEffect(() => {
         Axios.get(apiurlLocal).then((response) => {
@@ -63,11 +57,12 @@ const QuizContent = () => {
             question : ques.question,
             explain: ques.explain,
             options: [ques.option1, ques.option2, ques.option3, ques.option4],
-            answer_index: Number(ques.answer_index),
+            answerIndex: Number(ques.answer_index),
            
           }
     const postArticle = () => {
-        Axios.post(apiurlLocal, params).then((response) => {
+        // console.log("Before Posting");
+        Axios.post(apiurlLocalPost, params).then((response) => {
             setQues({
                 ...ques,
                 explain: "",
@@ -77,7 +72,7 @@ const QuizContent = () => {
                 option4: "",
             });
             console.log("Successfully Sent");
-            console.log(response.data.mcq_pcl);
+            // console.log(response.data.mcq);
         }).catch(() => {
         console.log("Opps an error ocured - Local");
       });
@@ -105,6 +100,7 @@ const QuizContent = () => {
                         ques={ques}
                         showModal={showModal}
                         postArticle={postArticle}
+                        paramsArticle={params}
                         setShowModal={setShowModal}
                         title="Add a question"
                     />
@@ -135,8 +131,6 @@ const QuizContent = () => {
                 
                 <button className="btn" onClick={() => {
                     if (quesIndex < (quizList.length -1) ) {
-                        // setCurrentIndex(quest);
-                        
                         setQuesIndex(quesIndex + 1);
                         setReachedEnd(false);
                     } else {
@@ -144,10 +138,8 @@ const QuizContent = () => {
                     }
                     }}>Next</button>
             </div>
-            <div className={styles.buttons}>
 
-             <AddToTable setShowModal={setShowModal} />
-            </div>
+             <AddQuestionBtn setShowModal={setShowModal} />
           
         </>    
     );

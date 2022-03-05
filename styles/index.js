@@ -52,6 +52,33 @@ export const SectionTitle = styled.h2`
     max-width: 100%;
   }
 `
+export const SectionSubTitle = styled.h3`
+  font-weight: 600;
+  font-size: ${(props) => props.main ? '45px' : '36px'};
+  line-height: ${(props) => props.main ? '52px' : '36px'};
+  width: max-content;
+  max-width: 100%;
+  color: #404346;
+  margin-bottom: 13px;
+  padding: ${(props) => props.main ? '40px 0 10px' : '0'};
+
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: ${(props) => props.main ? '40px' : '28px'};
+    line-height: ${(props) => props.main ? '46px' : '38px'};
+    margin-bottom: 10px;
+    padding: ${(props) => props.main ? '40px 0 12px' : '0'};
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 22px;
+    line-height: 40px;
+    font-size: ${(props) => props.main ? '20px' : '24px'};
+    line-height: ${(props) => props.main ? '22px' : '30px'};
+    margin-bottom: 8px;
+    padding: ${(props) => props.main ? '10px 0 8px' : '0'};
+    max-width: 100%;
+  }
+`
 
 export const SectionJumbotron = styled.p`
   max-width: 800px;

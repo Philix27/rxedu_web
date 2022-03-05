@@ -1,3 +1,4 @@
+import Axios from 'axios';
 import styles from './quizpage.module.css'
 import React,  {useState} from 'react';
 
@@ -9,12 +10,13 @@ export const ModalContent = (
         title,
         setShowModal,
         showModal,
+        // paramsArticle,
         postArticle
     }
 ) => {
 
     const [emptyField, setEmptyField] = useState(false);
-
+ 
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
@@ -29,16 +31,17 @@ export const ModalContent = (
             ques.question &&
             ques.answer_index &&
             ques.option1 &&
-            ques.option2 
-            ) {
-             e.preventDefault();
+            ques.option2) {
+            e.preventDefault();
             postArticle();
+            // _postArticle();
             setEmptyField(false);
         } else {
             setEmptyField(true)
-            
-            }
+        }
     }
+
+
     return (
         <div >
                 <div className={styles.header_box}>
@@ -46,7 +49,6 @@ export const ModalContent = (
                 </div>
             <form action="#" className={styles.wrapper}>
 
-                {/* Rumconazole Tablets 200mg */}
                 <div className={styles.input_box}>
                     <label htmlFor="form-category">Category</label>
                     <input
@@ -58,6 +60,7 @@ export const ModalContent = (
                         onChange={handleChange}
                     />
                 </div>
+
                 <div className={styles.input_box}>
                     <label htmlFor="form-question">Question</label>
                     <input type="text"
@@ -79,6 +82,7 @@ export const ModalContent = (
                                     onChange={handleChange}
                                 />
                 </div>
+
                 <div className={styles.input_box}>
                     <label htmlFor="form-options2">Options 2</label>
                     <input type="text"
@@ -89,6 +93,7 @@ export const ModalContent = (
                                     onChange={handleChange}
                                 />
                 </div>
+
                 <div className={styles.input_box}>
                     <label htmlFor="form-options3">Options 3</label>
                     <input type="text"
@@ -100,6 +105,7 @@ export const ModalContent = (
                                     onChange={handleChange}
                                 />
                 </div>
+
                 <div className={styles.input_box}>
                     <label htmlFor="form-options4">Options 4</label>
                     <input type="text"
@@ -110,6 +116,7 @@ export const ModalContent = (
                                     onChange={handleChange}
                                 />
                 </div>
+
                 <div className={styles.input_box}>
                     <label htmlFor="form-answer-index">Answer Index</label>
                     <input type="text"
@@ -120,6 +127,7 @@ export const ModalContent = (
                         onChange={handleChange}
                     />
                 </div>
+
                 <div className={styles.input_box}>
                     <label htmlFor="form-explain">Explaination</label>
                     <input type="text"
@@ -142,10 +150,13 @@ export const ModalContent = (
                     onClick={handleSubmit}
                         className="btn" />
             </div>
-            <div className="errorMsgWrapper">
-            {emptyField && <p className="errorMsg">Sorry, please check for empty fields </p>}
 
+            <div className="errorMsgWrapper">
+                {emptyField && <p className="errorMsg">
+                    Sorry, please check for empty fields
+                </p>}
             </div>
+
         </div>
     );
 }
