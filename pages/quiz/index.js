@@ -1,5 +1,5 @@
-import QuizComp from '../../comps/quiz/'
+import Quiz from '../../comps/quiz/'
 
-export default function Home() {
-  return <QuizComp />
+export default function Index() {
+  return <Quiz />
 }

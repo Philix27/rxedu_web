@@ -11,7 +11,7 @@ export default function Layout(props) {
                 <meta name="Rxedu.online" content="Created by Eligbue Felix" />
                 <link rel="icon" href="/favicon.ico" />
             </Head> 
-            <Navbar />
+            <Navbar /> 
             {props.children}    
             <Footer/> 
         </>

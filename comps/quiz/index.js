@@ -3,7 +3,7 @@ import QuizCategory from '../quiz/quiz_category'
 import styles from './quizpage.module.css'
 
 
-export default function QuizComp() {
+export default function Quiz() {
   return (
     < >
       <div className={styles.sectionHeader}>

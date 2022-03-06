@@ -5,18 +5,54 @@ import React,  {useState} from 'react';
                         
 export const ModalContent = (
     {
-        setQues,
-        ques,
+        apiUrl,
         title,
         setShowModal,
         showModal,
-        // paramsArticle,
-        postArticle
     }
 ) => {
 
     const [emptyField, setEmptyField] = useState(false);
- 
+    
+    const [ques, setQues] = useState({
+        category: "",
+        question: "",
+        explain: "",
+        option1: "",
+        option2: "",
+        option3: "",
+        option4: "",
+        answer_index: 9,
+        
+    });
+    
+    const params = {
+            category : ques.category,
+            question : ques.question,
+            explain: ques.explain,
+            options: [ques.option1, ques.option2, ques.option3, ques.option4],
+            answerIndex: Number(ques.answer_index),
+    }
+    
+    
+       const postArticle = () => {
+        Axios.post(apiUrl, params).then((response) => {
+            setQues({
+                ...ques,
+                explain: "",
+                option1: "",
+                option2: "",
+                option3: "",
+                option4: "",
+            });
+            console.log("Successfully Sent to: " + apiUrl);
+            // console.log(response.data.mcq);
+        }).catch(() => {
+        console.log("Opps an error ocured - Local");
+      });
+
+        
+    }
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;

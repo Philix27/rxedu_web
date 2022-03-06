@@ -2,31 +2,31 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link'
 import Axios from 'axios';
 import {CardItem, GridContainer, IndexSpan} from '../quiz/styles'
+import { AddQuestionBtn } from './addQuestionBtn';
+import { Modal } from '../articles/Modal/Modal';
+import { ModalContent } from './modal_content'
+
 
 const QuizCategory = ({apiCategory}) => {
     
-    // const apiurlLocal = process.env.BASEURL + process.env.API_VERSION + 'mcq';
     const apiurlLocal = `http://localhost:3007/api/v1/${apiCategory}`;
-    // const apiurlLocal = "http://localhost:3007/api/v1/mcq";
-    // const apiurlLocal = "http://localhost:3007/api/v1/mcq_pcl";
-
     const [quizList, setQuizList] =  useState([]);
-    
+    const [showModal, setShowModal] = useState(false);
+   
+
 
     useEffect(() => {
         Axios.get(apiurlLocal).then((response) => {
            
             setQuizList(response.data.mcq);
             console.log("Working");
-            // console.log(`Length: ${response.data.mcq.length}`);
-            // console.log(response.data.mcq);
+            console.log(`Length: ${response.data.mcq.length}`);
       }).catch(() => {
         console.log("Opps an error ocured - Local");
       });
     }, []);
 
-  
-
+ 
     
     var categoryList = [];
     quizList.forEach((value, index) => {
@@ -37,12 +37,28 @@ const QuizCategory = ({apiCategory}) => {
   
 
     return (
+        <>
+              {showModal && <Modal
+                showModal={showModal}
+                setShowModal={setShowModal}
+                title="Add a question"
+                children={
+                    <ModalContent
+                        apiUrl={apiurlLocal}
+                        showModal={showModal}
+                        setShowModal={setShowModal}
+                        title={apiCategory.toUpperCase()}
+                    />
+                }
+            />}
+  
+
         <GridContainer>             
             
             {categoryList.map((categoryItem, index) => { 
                 
                 return (
-                    <Link href={`/quiz/${categoryItem}`} key={index}>
+                    <Link href={`/quiz/${categoryItem}-${apiCategory}`} key={index}>
                         <CardItem>
                             <IndexSpan>{index + 1}.</IndexSpan>
                             {categoryItem.toUpperCase()}
@@ -51,7 +67,9 @@ const QuizCategory = ({apiCategory}) => {
                 ); 
             })}
    
-        </GridContainer>    
+            </GridContainer>  
+             <AddQuestionBtn setShowModal={setShowModal} />
+        </>    
     );
 }
 
