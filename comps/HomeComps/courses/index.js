@@ -3,13 +3,13 @@
 import Link from 'next/link'
 import React from 'react'
 import {motion} from 'framer-motion'
-import styles from './projects.module.css'
+import styles from './styles.module.css'
 import { projects } from './constants';
-import {   GridContainer, HeaderThree,  TitleContent, Img } from './projectsStyles';
+import {   GridContainer, HeaderThree,  TitleContent, Img } from './styles';
 import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
-export default function Projects() {
+export default function Courses() {
     return (
         <Section id="courses">
           <SectionTitle>Courses</SectionTitle>

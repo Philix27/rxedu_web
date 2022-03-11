@@ -30,7 +30,7 @@ const QuizContent = () => {
     useEffect(() => {
         Axios.get(apiurlLocal).then((response) => {
            
-            setQuizList(response.data.mcq);
+            setQuizList(response.data.data);
             console.log("Working");
             console.log(`Length: ${response.data.mcq.length}`);
             console.log(response.data.mcq);

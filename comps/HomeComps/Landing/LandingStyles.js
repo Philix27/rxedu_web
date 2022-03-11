@@ -58,3 +58,7 @@ export const Linka = styled.a`
  
 `
 
+ export const SmallText = styled.p`
+    color: #fff;
+    font-size: 1.7rem;
+`

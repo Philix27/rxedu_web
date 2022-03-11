@@ -6,7 +6,7 @@ export const projects = [
       tags: ['Dart', 'Flutter', 'Firebase', ],
     source: '/cology',
     visit: '/courses/cology',
-    id: 0,
+    id: 1,
   },
   {
     title: 'Pharmaceutics',
@@ -15,7 +15,7 @@ export const projects = [
     tags: ['Dart', 'Flutter', 'Firebase', ],
     source: '#',
     visit: '#',
-    id: 1,
+    id: 2,
   },
   {
     title: 'Clinical Pharmacy',
@@ -24,7 +24,7 @@ export const projects = [
       tags: ['Dart', 'Flutter', 'Firebase', ],
     source: 'https://play.google.com/store/apps/details?id=com.philix.rxedu',
     visit: 'https://play.google.com/store/apps/details?id=com.philix.rxedu',
-    id: 2,
+    id: 3,
   },
   {
     title: 'Pharmacognosy',
@@ -33,7 +33,7 @@ export const projects = [
       tags: ['React', 'Next.js', 'Node js',],
     source: 'rxedu.online',
     visit: 'rxedu.online',
-    id: 2,
+    id: 4,
   },
   {
     title: 'Pharmaceutical Microbiology',
@@ -42,7 +42,7 @@ export const projects = [
       tags: ['React', 'Next.js', 'Node js',],
     source: 'rxedu.online',
     visit: 'rxedu.online',
-    id: 2,
+    id: 5,
   },
   {
     title: 'Pharmaceutical Chemistry',
@@ -51,7 +51,7 @@ export const projects = [
       tags: ['React', 'Next.js', 'Node js',],
     source: 'rxedu.online',
     visit: 'rxedu.online',
-    id: 2,
+    id: 6,
   },
   
 ];

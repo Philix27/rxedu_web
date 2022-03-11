@@ -15,16 +15,10 @@ export default function Packages() {
           <SectionTitle>Packages</SectionTitle>
         
              <GridContainer>
-      {productsList.map(({
-    title,
-        description,
-    url,
-    icon,
-    id,
-      }) => (
+      {productsList.map(({title,description, url,icon,id}, index) => (
          <Link href={`${url}`}>
         <motion.div
-          key={id}
+          key={index}
           className={styles.card}
           initial={{ x: "-100vw", opacity: 0.1 }}
           animate={{ x: 0, opacity: 1 }}

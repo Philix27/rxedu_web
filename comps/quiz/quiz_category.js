@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect} from 'react';
 import Link from 'next/link'
 import Axios from 'axios';
 import {CardItem, GridContainer, IndexSpan} from '../quiz/styles'
@@ -18,7 +18,7 @@ const QuizCategory = ({apiCategory}) => {
     useEffect(() => {
         Axios.get(apiurlLocal).then((response) => {
            
-            setQuizList(response.data.mcq);
+            setQuizList(response.data.data);
             console.log("Working");
             console.log(`Length: ${response.data.mcq.length}`);
       }).catch(() => {
