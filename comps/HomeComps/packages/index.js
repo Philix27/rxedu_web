@@ -22,9 +22,7 @@ export default function Packages() {
           transition={{duration: 1.7, delay: 1, type: "tween", }}>
           
           {icon}
-          <div className='titleContent'>
             <h3 className='headerThree'>{title}</h3>
-          </div>
           
           <div style={{padding: "0px 20px"}}>
             <div className='sectionText'>{description}</div>

@@ -12,12 +12,6 @@ column-gap: 2rem;
 row-gap: 3rem;
 /* padding-bottom: 10; */
 
- @include mobileSS{
-   grid-template-columns: repeat(1, 1fr);
-     padding: 2rem;
-  padding-bottom: 0;
-}
-
 @include tabletSS {
    grid-template-columns: repeat(1, 1fr);
      padding: 2rem;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Footer from './Footer'
+import Footer from './Footer/Footer'
 import Navbar from './Navbar'
 
 export default function Layout(props) {
