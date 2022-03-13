@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;900&family=Roboto:wght@300;400;500;900&display=swap');
+
+@import 'reset';
+@import 'variables';
+@import 'colors';
+@import 'mixins';
+@import 'screensize';
+@import 'layouts';
+@import 'typos';
+@import 'buttons';
+@import 'landing';
+@import 'package';
+
+:root {
+    --fontFamily: 'Roboto', sans-serif;
+    /* --fontFamily: "Space Grotesk, sans-serif", */
+} 
+ 
+body {
+    font-family: var(--fontFamily);
+
+  }
+ 

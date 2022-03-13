@@ -1,0 +1,35 @@
+@import 'screensize';
+
+.landingStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+   max-width: 65vw;
+
+   @include mobileSS {
+     margin: 0 auto;
+  }
+
+   @include tabletSS {
+     margin: 0 auto;
+  }
+ 
+
+.img{
+  width:100%;
+  height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  color: #fff;
+}
+
+ .smallText {
+    color: #fff;
+    font-size: 1.7rem;
+ }
+
+}

@@ -4,17 +4,14 @@ import Link from 'next/link';
 import {motion} from 'framer-motion'
 import styles from './styles.module.css'
 import { productsList } from './constants';
-import {  GridContainer, HeaderThree,  TitleContent, } from './styles';
-import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
 export default function Packages() {
-    return (
-        <Section id="products">
-       
-          <SectionTitle>Packages</SectionTitle>
-        
-             <GridContainer>
+  return (
+      <div className='packages'>
+        <div className='section' id="products">
+          <div className='sectionTitle'>Packages</div>
+             <div className="gridContainer">
       {productsList.map(({title,description, url,icon,id}, index) => (
          <Link href={`${url}`}>
         <motion.div
@@ -25,21 +22,21 @@ export default function Packages() {
           transition={{duration: 1.7, delay: 1, type: "tween", }}>
           
           {icon}
-          <TitleContent>
-            <HeaderThree>{title}</HeaderThree>
-          </TitleContent>
+          <div className='titleContent'>
+            <h3 className='headerThree'>{title}</h3>
+          </div>
           
           <div style={{padding: "0px 20px"}}>
-            <SectionText>{description}</SectionText>
+            <div className='sectionText'>{description}</div>
           </div>       
        </motion.div>
           </Link>
       ))}
-    </GridContainer>
-            <br/>
+    </div>
             <br/>
             <br/>
          
-         </Section>
+      </div>
+      </div>
     )
 }

@@ -5,10 +5,17 @@ export const AddQuestionBtn = ({setShowModal}) => {
     
     return (
         <div className={styles.addQuestionButton}>
-            <button className="btn"
+            {/* <div > */}
+            <a className="btn" onClick={() => setShowModal(true)}>
+                Add Question
+                </a>
+            {/* <button 
                 type="button"
                 onClick={() => setShowModal(true)}
-            >Add Question</button>
+                >
+                    Add Question
+            </button> */}
+            {/* </div> */}
 
         </div>
     )

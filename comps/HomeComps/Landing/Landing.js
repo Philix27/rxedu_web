@@ -1,18 +1,17 @@
 // import Image from 'next/image';
 import React from 'react'
 import styles from './Landing.module.css'
-import {Section, Content, SectionTitle, Img, Linka, SmallText } from './LandingStyles'
 
 export default function LandingPage() {
 
     return (
       <div id='home' className={styles.container}> 
-       <Content>
-              <SectionTitle>Rxedu.online</SectionTitle>
-          <SmallText>
+       <div className='landingStyles'>
+              <div className='sectionTitle'>Rxedu.online</div>
+          <p className='smallText'>
             An educational platform for all Pharmacists and Medical Personnels
-          </SmallText> 
-       </Content>
+          </p> 
+       </div>
       </div>
     )
 }

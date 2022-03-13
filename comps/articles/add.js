@@ -1,4 +1,3 @@
-import { Section, SectionTitle, SectionText } from '../../styles';
 import React,  {useState} from 'react';
 import styles from './styles.module.css'
 
@@ -39,8 +38,8 @@ export default function Add( {
   }
   
     return (
-      <Section>
-                    <SectionTitle>Title</SectionTitle>
+      <div className='section'>
+                    <div className='sectionTitle'>Title</div>
     <div  >
                 
             <form action="#" className={styles.wrapper}>
@@ -109,7 +108,7 @@ export default function Add( {
 
         </div>
      </div>
-    </Section>
+    </div>
   )
 }
 

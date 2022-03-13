@@ -13,19 +13,19 @@ max-width: 1040px;
 /* align-content: center; */
 column-gap: 3rem;
 
-@media ${(props) => props.theme.breakpoints.lg} {
+@media ${(props) => 1040} {
    grid-template-columns: repeat(1, 1fr);
    /* padding: 2rem; */
    padding-bottom: 0;
    max-width: 80%;
 }
 
-@media ${(props) => props.theme.breakpoints.md} {
+@media ${(props) => 800} {
    grid-template-columns: repeat(1, 1fr);
      padding: 2rem;
   padding-bottom: 0;
 }
-@media ${(props) => props.theme.breakpoints.sm} {
+@media ${(props) => 500} {
    grid-template-columns: repeat(1, 1fr);
   display: flex;
   flex-direction: column;
@@ -44,12 +44,12 @@ export const CardItem = styled.div`
   border-radius: 5px;
   margin: 10px auto;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => 800} {
     margin: 5px auto;
      padding: 15px 17px;
      font-size: 1.3rem;
     }
-    @media ${(props) => props.theme.breakpoints.sm} {
+    @media ${(props) => 500} {
       margin: 5px auto;
       padding: 12px 13px;
       font-size: 1.2rem;
@@ -58,7 +58,7 @@ export const CardItem = styled.div`
 export const IndexSpan = styled.span`
   padding: 0px 10px;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${(props) => 800} {
     margin: 5px 0px;
      padding: 0 8px;
     }

@@ -5,16 +5,15 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import styles from './styles.module.css'
 import { projects } from './constants';
-import {   GridContainer, HeaderThree,  TitleContent, Img } from './styles';
-import { Section, SectionTitle, SectionText } from '../../../styles';
 
 
 export default function Courses() {
     return (
-        <Section id="courses">
-          <SectionTitle>Courses</SectionTitle>
+        <div className='section' id="courses">
+          <div className='SectionTitle' >Courses</div >
         
-             <GridContainer>
+        <div className='gridContainer'>
+          
       {projects.map(({
     title,
     description,
@@ -32,20 +31,20 @@ export default function Courses() {
           transition={{duration: 1.7, delay: 1, type: "spring", stiffness:"110"}}> 
           {/* transition={{duration: 1.7, delay: 1, type: "tween", }}> */}
           {/* <Image src={image} width={500} height={300}/> */}
-          <Link href={visit} target="_blank"><Img src={image} /></Link>
+          <Link href={visit} target="_blank"><img className='.img' src={image} /></Link>
         {/* <BlogCard> */}
-        <TitleContent>
-          <HeaderThree >{title}</HeaderThree>
-        </TitleContent>
+        <div className='titleContent'>
+          <h1 className='headerThree'>{title}</h1>
+        </div>
           <div style={{padding: "0px 20px"}}>
-            <SectionText>{description}</SectionText>
+            <div className='sectionText'>{description}</div>
             {/* <CardInfo>{description}</CardInfo> */}
         </div>
        
        {/* </BlogCard> */}
        </motion.div>
       ))}
-    </GridContainer>
+    </div>
             <br/>
             <br/>
             <br/>
@@ -62,6 +61,6 @@ export default function Courses() {
                 </div>
             </div> */}
             {/* </div> */}
-         </Section>
+         </div>
     )
 }

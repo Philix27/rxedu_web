@@ -1,31 +1,26 @@
 import React from 'react'
-import styles from './About.module.css'
-import { Section, SectionTitle, SectionText, SectionJumbotron } from '../../../styles';
-
-
+import styles from './styles.module.css'
 
 
 export default function Objectives() {
 
-
-
     return (
-        <Section id="objectives">
-            <SectionTitle>Objectives</SectionTitle>
+        <div className='section' id="objectives">
+            <div className='sectionTitle'>Objectives</div>
             <div className={styles.content}>
                
                 <div >
-                    <SectionJumbotron>
+                    <div className='sectionJumbotron'>
                        An Educaational platform for Pharmacists preparing for various exams.
                        Contains MCQs, and related materials need to ace pharmaceutical exams.
-                    </SectionJumbotron>      
+                    </div>      
                 </div>
                 <div >
-                    <SectionJumbotron>
+                    <div className='sectionJumbotron'>
                        Covers both undergraduate and post graduate courses. 
-                    </SectionJumbotron>      
+                    </div>      
                 </div>
             </div>           
-        </Section>
+        </div>
     )
 }
