@@ -1,49 +1,48 @@
 import React, { useState, useEffect} from 'react';
 import Link from 'next/link'
 import Axios from 'axios';
+import styles from './styles.module.css'
 
 
-export default function ArticlesComp(props) {
+  const categories = [
+  "blog",
+  "pharmacology",
+  "pharmaceutics",
+  "clinical pharmacy",
+  "pharmacognosy",
+  "pharm.microbiology",
+];
 
-    const apiurlLocal = `http://localhost:3007/api/v1/articles`;
-    const [articlesList, setArticlesList] =  useState([]);
-    const [showModal, setShowModal] = useState(false);
-   
-
-
-    useEffect(() => {
-        Axios.get(apiurlLocal).then((response) => {
-           
-            setArticlesList(response.data.data);
-            console.log("Working");
-            console.log(`Length: ${response.data.mcq.length}`);
-      }).catch(() => {
-        console.log("Opps an error ocured - Local");
-      });
-    }, []);
-
-  
+export default function ArticlesComp({contents}) {
+  const articleList = contents;
+  console.log("contents-zone");
+  console.log(contents)
   return (
     <div className='section'>
-      <h1>All Articles</h1>
+      <h1>Articles categories</h1>
       <div className='article-gridContainer'> 
 
-           {articlesList.map((anArticle, index) => { 
-                
-                return (
-                    <Link href={`/articles/${anArticle._id}`} key={anArticle._id}>
-                        <div className='cardItem'>
-                            {anArticle.title.toUpperCase()}
-                        </div>
-                    </Link>
-                ); 
-           })}
         
-        <p>All articles will be displayed here-
-          Fetched from the db using axios
-
-          First connect to api
-        </p>
+          {
+        categories.map((item, index) => (
+          <div key={index} className={styles.card}> 
+             <h3  >
+            {item.toUpperCase()}
+            </h3>
+           
+           <div>
+               {
+              contents.map((article, indexer )=> {
+                if (article.attributes.category.toUpperCase() === item.toUpperCase()) {
+                  return (<h5>{article.attributes.title}</h5>)
+                }
+              }
+              )
+            }
+           </div>
+         </div>
+        ))
+     }
        
      </div>
      </div>
@@ -51,4 +50,7 @@ export default function ArticlesComp(props) {
   )
 }
 
+function getFewContents(articlesContent) {
+  articlesContent
+}
 
