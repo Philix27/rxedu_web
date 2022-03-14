@@ -30,15 +30,30 @@ export default function ArticlesComp({contents}) {
             {item.toUpperCase()}
             </h3>
            
-           <div>
+            <div>
+              <ul>
                {
               contents.map((article, indexer )=> {
                 if (article.attributes.category.toUpperCase() === item.toUpperCase()) {
-                  return (<h5>{article.attributes.title}</h5>)
+                  return (
+                    <li key={indexer}>
+                    <Link href={`articles/${article.id}`}>
+                      
+                        
+                          <a >
+                    {article.attributes.title}
+                    </a>
+                       
+                       
+                      </Link>
+                       </li>
+                    )
                 }
               }
               )
-            }
+          
+              }
+              </ul>
            </div>
          </div>
         ))
