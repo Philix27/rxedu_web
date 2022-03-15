@@ -38,8 +38,6 @@ function ArticleDisplay(props) {
             <br />
              
             <div className='sectionTitle'>{article.title}</div>
-            {/* <p>{typeof article.content}</p> */}
-           
             <p>{article.content}</p>
             {/* <section dangerouslySetInnerHTML={{__html: md.render(article.content)}}></section> */}
             {/* <section dangerouslySetInnerHTML={{__html: md.render(String(article.content))}}></section> */}

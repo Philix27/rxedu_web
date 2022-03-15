@@ -10,7 +10,8 @@ import styles from './styles.module.css'
   "pharmaceutics",
   "clinical pharmacy",
   "pharmacognosy",
-  "pharm.microbiology",
+    "pharm. microbiology",
+  "others"
 ];
 
 export default function ArticlesComp({contents}) {

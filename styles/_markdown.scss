@@ -1,0 +1,27 @@
+.markdown-section{
+    padding: 10px 15px;
+
+    h3 {
+        padding: 10px 0;
+    }
+
+    p{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    ul{
+        list-style: decimal;
+        ul{
+            padding-left: 10px;
+            list-style: circle;
+             li{
+            list-style:circle;
+         }
+        }
+    }
+
+    li{
+        list-style:decimal;
+    }
+}

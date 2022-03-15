@@ -1,5 +1,3 @@
-// import ArticleDisplay from '../../comps/articles/articleDisplay'
-import React,  {useState, useEffect} from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import MarkdownIt from 'markdown-it'
@@ -12,18 +10,19 @@ export default function ArticleDisplayPage({articlate}) {
    const md = new MarkdownIt();
 
     return (
-        <div className='section'>             
-            <br />
-            <br />
-            <br />
+                     
              
-            <div className='sectionTitle'>{articlate.title}</div>
-            
         <section
           className='section'
+        >
+           <div className='markdown-section'>
+              <div className='sectionTitle'>{articlate.title}</div>
+        <div
           dangerouslySetInnerHTML={{ __html: md.render(articlate.content) }}>
-          </section>          
-        </div>    
+          </div>
+           </div>
+          </section>
+           
     );
 }
 
