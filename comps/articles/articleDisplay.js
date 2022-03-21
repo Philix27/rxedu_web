@@ -12,7 +12,7 @@ function ArticleDisplay(props) {
     const router = useRouter();
     const articleID = router.query.articleID;
    
-    const apiurlLocal = `http://localhost:3007/api/v1/articles/${articleID}`;
+    const apiurlLocal = `${process.env.NEXT_PUBLIC_API_URL}articles/${articleID}`;
 
     const [article, setArticle] =  useState([]);
    

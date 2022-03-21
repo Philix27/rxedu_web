@@ -9,7 +9,7 @@ import { ModalContent } from './modal_content'
 
 const QuizCategory = ({apiCategory}) => {
     
-    const apiurlLocal = `http://localhost:3007/api/v1/${apiCategory}`;
+    const apiurlLocal = `${process.env.NEXT_PUBLIC_API_URL}${apiCategory}`;
     const [quizList, setQuizList] =  useState([]);
     const [showModal, setShowModal] = useState(false);
    

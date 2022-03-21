@@ -5,7 +5,7 @@ import Axios from 'axios';
 
 export default function AdminComp() {
 
-     const apiUrl = `http://localhost:3007/api/v1/articles`;
+     const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}articles`;
     const [emptyField, setEmptyField] = useState(false);
     const [isSuccessful, setIsSuccessful] = useState(false);
     const [article, setArticle] = useState({
@@ -72,8 +72,10 @@ export default function AdminComp() {
             <form action="#" className={styles.wrapper}>
                 <div className={styles.input_box}>
                     <label htmlFor="form-category">Category</label>
-                        <select name="category"  onChange={handleChange}>
-                            <option value='pharmacology'>Pharmacology</option>
+                        <select name="category"
+                            defaultValue='pharmacology'    onChange={handleChange}>
+                            <option selected="selected"
+                                >Pharmacology</option>
                             <option value='pharmaceutics'>Pharmaceutics</option>
                             <option value ='clinical pharmacy'>Clinical Pharmacy</option>
                             <option value='blog'>Blogs</option>

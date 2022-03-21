@@ -15,15 +15,14 @@ import styles from './styles.module.css'
 ];
 
 export default function ArticlesComp({contents}) {
-  const articleList = contents;
-  console.log("contents-zone");
-  console.log(contents)
+
+  // console.log("contents-zone");
+  // console.log(contents.data[0])
   return (
     <div className='section'>
       <h1>Articles categories</h1>
       <div className='article-gridContainer'> 
 
-        
           {
         categories.map((item, index) => (
           <div key={index} className={styles.card}> 
@@ -34,17 +33,13 @@ export default function ArticlesComp({contents}) {
             <div>
               <ul>
                {
-              contents.map((article, indexer )=> {
-                if (article.attributes.category.toUpperCase() === item.toUpperCase()) {
+              contents.data.map((article, indexer )=> {
+                if (article.category.toUpperCase() === item.toUpperCase()) {
                   return (
                     <li key={indexer}>
-                    <Link href={`articles/${article.id}`}>
-                      
+                    <Link href={`articles/${article._id}`}>
                         
-                          <a >
-                    {article.attributes.title}
-                    </a>
-                       
+                    <a>{article.title}</a>
                        
                       </Link>
                        </li>

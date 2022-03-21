@@ -16,7 +16,7 @@ const QuizContent = () => {
     const categoryName = tempo[0];
     const apiUrl = tempo[1];
 
-    const apiurlLocal = `http://localhost:3007/api/v1/${apiUrl}`;
+    const apiurlLocal = `${process.env.NEXT_PUBLIC_API_URL}${apiUrl}`;
 
     const [quizList, setQuizList] =  useState([]);
     // const [showModal, setShowModal] = useState(false);

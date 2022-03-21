@@ -13,7 +13,8 @@ export default function Packages() {
           <div className='sectionTitle'>Packages</div>
              <div className="gridContainer">
       {productsList.map(({title,description, url,icon,id}, index) => (
-         <Link href={`${url}`}>
+        <Link href={`${url}`} key={index}>
+          <a>
         <motion.div
           key={index}
           className={styles.card}
@@ -27,7 +28,8 @@ export default function Packages() {
           <div style={{padding: "0px 20px"}}>
             <div className='sectionText'>{description}</div>
           </div>       
-       </motion.div>
+            </motion.div>
+            </a>
           </Link>
       ))}
     </div>
