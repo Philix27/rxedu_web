@@ -1,8 +1,5 @@
 import React,  {useState, useEffect, useMemo} from 'react';
 import Axios from 'axios';
-// import { AddQuestionBtn } from './addQuestionBtn';
-import { Modal } from '../articles/Modal/Modal';
-import {ModalContent} from './modal_content'
 import QuestSection from './quest_section';
 import { useRouter } from 'next/router';
 import styles from './quizpage.module.css'
