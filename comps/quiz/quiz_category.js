@@ -60,7 +60,8 @@ const QuizCategory = ({apiCategory}) => {
                 return (
                     // <Link href={`/quiz/${categoryItem}`} key={index}>
                     //  <Link href={`/quiz/${categoryItem}-${apiCategory}`} key={index}> 
-                     <Link href={`/quiz/${categoryItem}`} key={index}> 
+                    //  <Link href={`/quiz/${categoryItem}`} key={index}> 
+                     <Link href={`/quiz/#`} key={index}> 
                         <CardItem>
                             <IndexSpan>{index + 1}.</IndexSpan>
                             {categoryItem.toUpperCase()}
