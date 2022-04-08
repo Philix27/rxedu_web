@@ -9,7 +9,8 @@ export const productsList = [
     title: 'MCQs',
     icon:  (<BsQuestionSquare className={styles.icon} />),
     description: "An android app for Delta State University Students, (Nigeria). Contains an e-commerce section and a news section ",
-    url: '/quiz/',
+    url: '#',
+    // url: '/quiz/',
     id: 0,
   },
   {
@@ -30,7 +31,8 @@ export const productsList = [
     title: 'Articles',
      icon:  (<BiNotepad className={styles.icon} />),
     description: "An Educaational App for Pharmacists preparing for various exams.",
-    url: '/articles',
+    url: '#',
+    // url: '/articles',
     id: 3,
   },
 

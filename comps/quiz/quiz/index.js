@@ -1,4 +1,4 @@
-import Quiz from '../../comps/quiz/'
+import Quiz from '..'
 
 export default function Index() {
   return <Quiz />
