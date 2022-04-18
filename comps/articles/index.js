@@ -2,6 +2,7 @@ import React, { useState, useEffect} from 'react';
 import Link from 'next/link'
 import Axios from 'axios';
 import styles from './styles.module.css'
+// import {ArticlesCategory} from './categories'
 
 
   const categories = [
@@ -13,6 +14,7 @@ import styles from './styles.module.css'
     "pharm. microbiology",
   "others"
 ];
+
 
 export default function ArticlesComp({contents}) {
 

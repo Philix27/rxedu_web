@@ -1,10 +1,9 @@
-
-import React,  {useState} from 'react';
+import React,  {useState, useEffect} from 'react';
 import styles from './styles.module.css'
 import Axios from 'axios';
 
-export default function AdminComp() {
-
+export default function AdminComp({articleCategories}) {
+    
      const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}articles`;
     const [emptyField, setEmptyField] = useState(false);
     const [isSuccessful, setIsSuccessful] = useState(false);
@@ -15,6 +14,7 @@ export default function AdminComp() {
         imageUrl: "",
     
     });
+
 
     function postArticle(_article) { 
         Axios.post(apiUrl, _article).then((response) => {
@@ -73,14 +73,17 @@ export default function AdminComp() {
                 <div className={styles.input_box}>
                     <label htmlFor="form-category">Category</label>
                         <select name="category"
-                            defaultValue='pharmacology'    onChange={handleChange}>
-                            <option selected="selected"
-                                >Pharmacology</option>
-                            <option value='pharmaceutics'>Pharmaceutics</option>
-                            <option value ='clinical pharmacy'>Clinical Pharmacy</option>
-                            <option value='blog'>Blogs</option>
-                            <option value='pharm. microbiology'>Pharm. Microbiology</option>
-                            <option value='others'>Others</option>
+                            defaultValue='pharmacology' onChange={handleChange}>
+                             {/* <option selected="selected"
+                            >Pharmacology</option> */}
+                            
+                            {articleCategories.map((_category, index) => {
+                                return (
+                                     <option value={_category.title.toLowerCase()} key={index}
+                                    >{_category.title}</option>
+                                );
+                            })}
+                           
                         </select>
 
         </div>

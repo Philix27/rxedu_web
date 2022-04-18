@@ -1,10 +1,12 @@
 import ArticlesComp from '../../comps/articles/'
+import ArticlesCategory from '../../comps/articles/categories'
 import axios from 'axios'
 
 
 
 export default function ArticlesPage({ contentsList }) {
-  return (<ArticlesComp contents={contentsList} />)
+  // return (<ArticlesComp contents={contentsList} />)
+  return (<ArticlesCategory />)
 }
 
 export async function getServerSideProps() {
