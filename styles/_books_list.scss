@@ -1,0 +1,91 @@
+@import "colors";
+
+.booksListPage {
+  .gridContainer {
+    display: block;
+    // flex-direction: column;
+    min-width: 50%;
+    align-self: center;
+    align-content: center;
+    @include mobileSS {
+      padding: 10px;
+      min-width: 75%;
+    }
+  }
+
+  .img {
+    width: 120px;
+    object-fit: fit;
+    @include mobileSS {
+      width: 75px;
+    }
+  }
+
+  .card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    // width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .texty {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 10px 20px;
+  }
+
+  .bookTitle {
+    color: $primaryColor;
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+  .bookAuthor {
+    font-size: 1.5rem;
+  }
+  .bookPostedDate {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    color: #414143;
+  }
+
+  select {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background: $primaryColor;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 15px 12px;
+    margin: 20px 0;
+    text-align: center;
+    @include mobileSS {
+      width: 75%;
+    }
+  }
+  option {
+    padding: 12px 0;
+    text-align: center;
+    /* margin: 10px 0; */
+  }
+
+  input {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    // color: #fff;
+    // background: $primaryColor;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 15px 12px;
+    margin: 20px 0;
+    text-align: center;
+    @include mobileSS {
+      width: 75%;
+    }
+  }
+}
