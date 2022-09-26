@@ -1,0 +1,26 @@
+.admin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-bottom: 20px;
+
+  @include tabletSS {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobileSS {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  div {
+    padding: 30px;
+    display: flex;
+    h3 {
+      padding: 0 20px;
+    }
+  }
+  a {
+    color: $primaryColor;
+  }
+}

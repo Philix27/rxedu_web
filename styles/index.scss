@@ -13,6 +13,7 @@
 @import "courses";
 @import "markdown";
 @import "books_list";
+@import "admin";
 
 :root {
   --fontFamily: "Roboto", sans-serif;
@@ -21,4 +22,22 @@
 
 body {
   font-family: var(--fontFamily);
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+
+  &:hover {
+    box-shadow: 0 5px 10px rgba(1, 121, 177, 0.759);
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.px-2 {
+  padding: 0 20px;
 }

@@ -2,37 +2,38 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import Axios from "axios";
 
-export default function AddPepNotesComp({ title }) {
-  // const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}pep_note/`;
-  //   const [emptyField, setEmptyField] = useState(false);
+export default function AdminBrandDrugsComp({ articleCategories, title }) {
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}articles`;
+
+  const [emptyField, setEmptyField] = useState(false);
   const [isSuccessful, setIsSuccessful] = useState(false);
   const [article, setArticle] = useState({
-    category: "PEP",
+    category: "",
     title: "",
     content: "",
     imageUrl: "",
   });
 
   function postArticle(_article) {
-    Axios.post("https://rxedu-api.vercel.app/api/v1/pep_mcq_demo", article)
+    console.log("Clicked Post");
+    Axios.post(apiUrl, _article)
       .then((response) => {
         setIsSuccessful(true);
 
         setArticle({
-          category: "PEP",
+          category: "",
           title: "",
           content: "",
           imageUrl: "",
         });
-        // console.log("Successfully Sent to: " + apiUrl);
+        console.log("Successfully Sent to: " + apiUrl);
 
         setTimeout(() => {
           setIsSuccessful(false);
         }, 5000);
       })
-      .catch((e) => {
-        console.log(e);
-        console.log("Opps an error ocured");
+      .catch(() => {
+        console.log("Opps an error ocured - Local");
       });
   }
 
@@ -44,15 +45,17 @@ export default function AddPepNotesComp({ title }) {
 
     console.log("Article Objj");
     console.log(article);
-    // console.log(apiUrl);
   };
 
   const handleSubmit = (e) => {
-    if (article.title && article.content) {
+    if (article.category && article.title && article.content) {
       e.preventDefault();
       postArticle(article);
+
+      setEmptyField(false);
     } else {
-      console.log("Something is missing");
+      console.log("Cannot Submit Post");
+      setEmptyField(true);
     }
   };
 
@@ -64,6 +67,26 @@ export default function AddPepNotesComp({ title }) {
       </div>
       <div>
         <form action="#" className={styles.wrapper}>
+          <div className={styles.input_box}>
+            <label htmlFor="form-category">Category</label>
+            <select
+              name="category"
+              defaultValue="pharmacology"
+              onChange={handleChange}
+            >
+              {/* <option selected="selected"
+                            >Pharmacology</option> */}
+
+              {articleCategories.map((_category, index) => {
+                return (
+                  <option value={_category.title.toLowerCase()} key={index}>
+                    {_category.title}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+
           <div className={styles.input_box}>
             <label htmlFor="form-category">Title</label>
             <input

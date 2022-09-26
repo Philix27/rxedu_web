@@ -1,22 +1,19 @@
-import styles from './quizpage.module.css'
+import styles from "./quizpage.module.css";
 
+export const AddQuestionBtn = ({ setShowModal }) => {
+  return (
+    <div className={styles.addQuestionButton}>
+      <a className="btn" onClick={() => setShowModal(true)}>
+        Add Question
+      </a>
 
-export const AddQuestionBtn = ({setShowModal}) => {
-    
-    return (
-        <div className={styles.addQuestionButton}>
-            {/* <div > */}
-            <a className="btn" onClick={() => setShowModal(true)}>
-                Add Question
-                </a>
-            {/* <button 
+      {/* <button 
                 type="button"
                 onClick={() => setShowModal(true)}
                 >
                     Add Question
             </button> */}
-            {/* </div> */}
-
-        </div>
-    )
-}
+      {/* </div> */}
+    </div>
+  );
+};

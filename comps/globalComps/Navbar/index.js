@@ -48,7 +48,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className={styles.nav_start_list_item}>
-                <Link href="/pep">
+                <Link href="/quiz/">
                   <a className={styles.link}>MCQs</a>
                 </Link>
               </li>
@@ -59,12 +59,22 @@ export default function Navbar() {
               </li>
               <li className={styles.nav_start_list_item}>
                 <Link href="/books">
-                  <a className={styles.link}>Books</a>
+                  <a className={styles.link}>Notes</a>
                 </Link>
               </li>
               <li className={styles.nav_start_list_item}>
-                <Link href="/addpepnotes">
-                  <a className={styles.link}>Add Notes</a>
+                <Link href="#">
+                  <a className={styles.link}>Blogs</a>
+                </Link>
+              </li>
+              <li className={styles.nav_start_list_item}>
+                <Link href="#">
+                  <a className={styles.link}>Find Drugs</a>
+                </Link>
+              </li>
+              <li className={styles.nav_start_list_item}>
+                <Link href="/admin">
+                  <a className={styles.link}>Admin</a>
                 </Link>
               </li>
             </ul>
