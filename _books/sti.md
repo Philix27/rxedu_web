@@ -5,9 +5,8 @@ cover_image: ""
 completed: true
 started: true
 ---
-# Pharmacotherapy of Sexually Transmitted Infections:
 
-DAY 3 SUMMARY (II)
+# Pharmacotherapy of Sexually Transmitted Infections:
 
 Sexually transmitted infections (STIs) are also commonly called sexually transmitted diseases (STDs). They are the infections you get from another person through sexual contact. According to the CDC, there are more than 20 known types of STDs/STIs. In addition, over 20 million people in the United States are infected each year. About half of these people are age 15-24. Luckily, most STDs can be treated and cured.
 
@@ -319,50 +318,44 @@ Diagnosis of candidiasis:
 
 https://www.plannedparenthood.org/learn/stds-hiv-safer-sex
 
-GOAL OF THERAPY:
+## GOAL OF THERAPY:
 
-•To cure or manage infectious diseases(where applicable)
+- To cure or manage infectious diseases(where applicable)
+- To resolve clinical symptoms
+- To prevent or reduce transmission to others
+- To educate patients on their disease, and its prevention
+- To prevent/ reduce resistance to antimicrobials
+- To promote safer sex behaviour
+- To identify barriers to adherence.
 
-•To resolve clinical symptoms
+## Pharmaceutical care considerations:
 
-•To prevent or reduce transmission to others
-
-•To educate patients on their disease, and its prevention
-
-•To prevent/ reduce resistance to antimicrobials
-
-•To promote safer sex behaviour
-
-•To identify barriers to adherence.
-
-Pharmaceutical care considerations:
-
-•Drug selection
-Criteria for the selection of STI drugs include:
-high efficacy (at least 95%)
-low cost
-acceptable toxicity and tolerance
-Adherence
-organism resistance unlikely to develop or likely to be delayed
-single dose
-Route of administration
-not contraindicated for pregnant or lactating women.
-Formulation type
+- Drug selection. Criteria for the selection of STI drugs include:
+- high efficacy (at least 95%)
+- low cost
+- acceptable toxicity and tolerance
+- Adherence
+- organism resistance unlikely to develop or likely to be delayed
+- single dose
+- Route of administration
+- not contraindicated for pregnant or lactating women.
+- Formulation type
 
 Prevention And Control Of STDs
 
-•Primary prevention
-•Abstinence
-•Mutually faithful sexual relationship
-•Correct and consistent use of condoms
-•Safer sex practices
-•Secondary prevention
-•Promoting STI care-seeking behaviour through:
-•Providing non-stigmatizing and non-discriminatory health services
-•Providing quality STls care
-•Providing correct antimicrobial therapy for the STls syndrome
+## Primary prevention
 
-Prognosis:
+- Abstinence
+- Mutually faithful sexual relationship
+- Correct and consistent use of condoms
+- Safer sex practices
+- Secondary prevention
+- Promoting STI care-seeking behaviour through:
+- Providing non-stigmatizing and non-discriminatory health services
+- Providing quality STls care
+- Providing correct antimicrobial therapy for the STls syndrome
+
+## Prognosis:
 
 Most STDs are curable if diagnosed early and properly treated Viral STDs cannot be cured but can be suppressed
 Important to treat partner(s) to prevent re-infection of the
@@ -370,7 +363,7 @@ disease,
 Also some patients may have developed complications as a
 result of an STD even after the infection may have been treated.
 
-Conclusion:
+## Conclusion:
 
 In summary, several diseases can be transmitted via sexual contact And like the saying goes “prevention is better than cure ” or in this case treatment as not all STDs can be cured; also considering the many complications linked to these diseases It is therefore of high importance for safe sex to be practiced;
 abstinence remains a better option for the unmarried.

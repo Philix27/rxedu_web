@@ -18,8 +18,8 @@ export default function PostContentPage({
       </Head> */}
       <div className="section post_page">
         <img src={cover_image} alt="" className="img" />
-        <h1 className="sectionTitle">{title}</h1>
-        <div className="content">
+        {/* <h1 className="sectionTitle">{title}</h1> */}
+        <div className="markdown-section">
           <div dangerouslySetInnerHTML={{ __html: cc }}></div>
           {/* <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div> */}
         </div>

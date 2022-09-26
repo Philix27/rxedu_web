@@ -62,6 +62,11 @@ export default function Navbar() {
                   <a className={styles.link}>Books</a>
                 </Link>
               </li>
+              <li className={styles.nav_start_list_item}>
+                <Link href="/addpepnotes">
+                  <a className={styles.link}>Add Notes</a>
+                </Link>
+              </li>
             </ul>
           </motion.div>
         </div>

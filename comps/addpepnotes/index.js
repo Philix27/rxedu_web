@@ -2,38 +2,37 @@ import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import Axios from "axios";
 
-export default function AdminComp({ articleCategories }) {
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}articles`;
-
-  const [emptyField, setEmptyField] = useState(false);
+export default function AddPepNotesComp() {
+  // const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}pep_note/`;
+  //   const [emptyField, setEmptyField] = useState(false);
   const [isSuccessful, setIsSuccessful] = useState(false);
   const [article, setArticle] = useState({
-    category: "",
+    category: "PEP",
     title: "",
     content: "",
     imageUrl: "",
   });
 
   function postArticle(_article) {
-    console.log("Clicked Post");
-    Axios.post(apiUrl, _article)
+    Axios.post("https://rxedu-api.vercel.app/api/v1/pep_mcq_demo", article)
       .then((response) => {
         setIsSuccessful(true);
 
         setArticle({
-          category: "",
+          category: "PEP",
           title: "",
           content: "",
           imageUrl: "",
         });
-        console.log("Successfully Sent to: " + apiUrl);
+        // console.log("Successfully Sent to: " + apiUrl);
 
         setTimeout(() => {
           setIsSuccessful(false);
         }, 5000);
       })
-      .catch(() => {
-        console.log("Opps an error ocured - Local");
+      .catch((e) => {
+        console.log(e);
+        console.log("Opps an error ocured");
       });
   }
 
@@ -45,17 +44,15 @@ export default function AdminComp({ articleCategories }) {
 
     console.log("Article Objj");
     console.log(article);
+    // console.log(apiUrl);
   };
 
   const handleSubmit = (e) => {
-    if (article.category && article.title && article.content) {
+    if (article.title && article.content) {
       e.preventDefault();
       postArticle(article);
-
-      setEmptyField(false);
     } else {
-      console.log("Cannot Submit Post");
-      setEmptyField(true);
+      console.log("Something is missing");
     }
   };
 
@@ -67,26 +64,6 @@ export default function AdminComp({ articleCategories }) {
       </div>
       <div>
         <form action="#" className={styles.wrapper}>
-          <div className={styles.input_box}>
-            <label htmlFor="form-category">Category</label>
-            <select
-              name="category"
-              defaultValue="pharmacology"
-              onChange={handleChange}
-            >
-              {/* <option selected="selected"
-                            >Pharmacology</option> */}
-
-              {articleCategories.map((_category, index) => {
-                return (
-                  <option value={_category.title.toLowerCase()} key={index}>
-                    {_category.title}
-                  </option>
-                );
-              })}
-            </select>
-          </div>
-
           <div className={styles.input_box}>
             <label htmlFor="form-category">Title</label>
             <input

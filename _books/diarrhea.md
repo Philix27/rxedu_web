@@ -1,11 +1,3 @@
----
-title: "Diarrhea"
-category: "PEP"
-cover_image: ""
-completed: true
-started: true
----
-
 # DIARRHEA PHARMACOTHERAPY REVISION:
 
 Diarrhoeal disease is the second leading cause of death in children under five years old, and is responsible for killing around 525 000 children every year. Diarrhoea can last several days, and can leave the body without the water and salts that are necessary for survival. In the past, for most people, severe dehydration and fluid loss were the main causes of diarrhoea deaths. Now, other causes such as septic bacterial infections are likely to account for an increasing proportion of all diarrhoea-associated deaths. Children who are malnourished or have impaired immunity as well as people living with HIV are most at risk of life-threatening diarrhoea.

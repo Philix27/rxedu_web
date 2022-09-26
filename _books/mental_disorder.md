@@ -6,7 +6,6 @@ completed: true
 started: true
 ---
 
-
 # Mental Disorders (Management should include psychotherapy) – Psychiatric disorders
 
 (Anxiety, Mood disorders, schizophrenia, Sleep disorders, Attention Deficit  

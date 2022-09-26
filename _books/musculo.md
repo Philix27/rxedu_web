@@ -6,7 +6,7 @@ completed: true
 started: true
 ---
 
-[8/26, 6:36 AM] PharmaHub: ▫️: #Musculoskeletal Pharmacotherapy!
+#Musculoskeletal Pharmacotherapy!
 
 INTRODUCTION:
 

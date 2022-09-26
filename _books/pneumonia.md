@@ -6,7 +6,7 @@ completed: true
 started: true
 ---
 
-# Pharmacotherapy of Pneumonia:-
+# Pharmacotherapy of Pneumonia:
 
 Pneumonia is an infection that inflames your lungs' air sacs (alveoli). The air sacs may fill up with fluid or pus, causing symptoms such as a cough, fever, chills and trouble breathing.
 
