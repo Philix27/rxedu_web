@@ -1,0 +1,61 @@
+.admin-products {
+  .deleted {
+    position: fixed;
+    top: 30px;
+    padding: 15px 20px;
+    background-color: $primaryColor;
+    color: #fff;
+    font-weight: 600;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  table tr th {
+    background-color: $primaryColor;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+  }
+
+  table tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  tr:hover {
+    color: $primaryColor;
+    font-weight: 600;
+  }
+  tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  tr:last-of-type {
+    border-bottom: 2px solid $primaryColor;
+  }
+  td {
+    padding: 10px 12px;
+  }
+
+  input {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px;
+    border: none;
+    // color: #fff;
+    // background: $primaryColor;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 15px 12px;
+    margin: 20px 0;
+    text-align: center;
+    @include mobileSS {
+      width: 75%;
+    }
+  }
+}

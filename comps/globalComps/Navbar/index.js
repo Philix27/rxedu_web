@@ -77,6 +77,11 @@ export default function Navbar() {
                   <a className={styles.link}>Admin</a>
                 </Link>
               </li>
+              <li className={styles.nav_start_list_item}>
+                <Link href="/brands">
+                  <a className={styles.link}>Brand</a>
+                </Link>
+              </li>
             </ul>
           </motion.div>
         </div>

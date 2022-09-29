@@ -3,29 +3,28 @@ import styles from "./styles.module.css";
 import Axios from "axios";
 
 export default function AdminComp({ articleCategories, title }) {
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}articles`;
+  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}brand_drugs`;
 
   const [emptyField, setEmptyField] = useState(false);
   const [isSuccessful, setIsSuccessful] = useState(false);
+
   const [article, setArticle] = useState({
-    category: "",
-    title: "",
-    content: "",
-    imageUrl: "",
+    name: "",
+    note: "",
+    dosageForm: "Tablet",
+    company: "",
+    generic: "",
+    img: "",
+    genericID: "",
+    country: ["All"],
   });
 
   function postArticle(_article) {
     console.log("Clicked Post");
-    Axios.post(apiUrl, _article)
+    Axios.post("https://rxedu-api.vercel.app/api/v1/brand_drugs", _article)
       .then((response) => {
         setIsSuccessful(true);
 
-        setArticle({
-          category: "",
-          title: "",
-          content: "",
-          imageUrl: "",
-        });
         console.log("Successfully Sent to: " + apiUrl);
 
         setTimeout(() => {
@@ -48,11 +47,11 @@ export default function AdminComp({ articleCategories, title }) {
   };
 
   const handleSubmit = (e) => {
-    if (article.category && article.title && article.content) {
+    if (article.name && article.generic) {
       e.preventDefault();
       postArticle(article);
 
-      setEmptyField(false);
+      // setEmptyField(false);
     } else {
       console.log("Cannot Submit Post");
       setEmptyField(true);
@@ -68,44 +67,67 @@ export default function AdminComp({ articleCategories, title }) {
       <div>
         <form action="#" className={styles.wrapper}>
           <div className={styles.input_box}>
-            <label htmlFor="form-category">Category</label>
+            <label htmlFor="form-DosageForm">Dosage Form</label>
             <select
-              name="category"
-              defaultValue="pharmacology"
+              name="dosageForm"
+              defaultValue="Tablet"
               onChange={handleChange}
             >
-              {/* <option selected="selected"
-                            >Pharmacology</option> */}
-
-              {articleCategories.map((_category, index) => {
-                return (
-                  <option value={_category.title.toLowerCase()} key={index}>
-                    {_category.title}
-                  </option>
-                );
-              })}
+              <option value="Tablet">Tablet</option>
+              <option value="Capsule">Capsule</option>
+              <option value="Suspension">Suspension</option>
+              <option value="Injection">Injection</option>
+              <option value="Syrup">Syrup</option>
+              <option value="Consumable">Consumable</option>
+              <option value="Gummies">Gummies</option>
+              <option value="Cream">Cream</option>
+              <option value="Lotion">Lotion</option>
+              <option value="Powder">Powder</option>
+              <option value="Suppository">Suppository</option>
+              <option value="Others">Others</option>
             </select>
           </div>
 
           <div className={styles.input_box}>
-            <label htmlFor="form-category">Title</label>
+            <label htmlFor="form-category">Name</label>
             <input
               type="text"
               rows="2"
-              id="form-title"
+              id="form-name"
               placeholder="Title"
-              name="title"
+              name="name"
               // value={ques.category}
               onChange={handleChange}
             />
           </div>
           <div className={styles.input_box}>
-            <label htmlFor="form-category">Story</label>
+            <label htmlFor="form-category">Description</label>
             <textarea
               rows="10"
-              id="form-content"
-              placeholder="Story - Markdown/Text"
-              name="content"
+              id="form-note"
+              placeholder="Note"
+              name="note"
+              onChange={handleChange}
+            ></textarea>
+          </div>
+
+          <div className={styles.input_box}>
+            <label htmlFor="form-category">Company</label>
+            <textarea
+              rows="2"
+              id="form-company"
+              placeholder="Name of company"
+              name="company"
+              onChange={handleChange}
+            ></textarea>
+          </div>
+          <div className={styles.input_box}>
+            <label htmlFor="form-category">Generic</label>
+            <textarea
+              rows="1"
+              id="form-dosageForm"
+              placeholder="Generic names"
+              name="generic"
               onChange={handleChange}
             ></textarea>
           </div>

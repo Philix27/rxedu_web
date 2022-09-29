@@ -1,12 +1,12 @@
-@import 'colors';
-@import 'variables';
-@import 'screensize';
+@import "colors";
+@import "variables";
+@import "screensize";
 
-.btn{ 
+.btn {
   width: 30vw;
   height: 3.5rem;
   margin: 20px 0;
-  background-color: #022044;
+  background-color: rgb(6, 116, 143);
   font-size: 1.45rem;
   display: flex;
   align-items: center;
@@ -17,23 +17,24 @@
   border-color: #fff;
   border-width: 1px;
   border-style: solid;
-  color:  #fff;
+  color: #fff;
 
-    &:hover{
-    background-color: #04336d;
-    }
+  &:hover {
+    background-color: rgb(1, 75, 94);
+  }
 
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 
-    &:active {
-        background: #e0e4eb;
-        border: 1px solid #304169;
-        box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
-    }
+  &:active {
+    background: #e0e4eb;
+    border: 1px solid rgb(5, 142, 176);
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15),
+      inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
 
-   @include tabletSS{
+  @include tabletSS {
     width: 40vw;
   }
 
