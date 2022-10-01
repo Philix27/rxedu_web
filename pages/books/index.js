@@ -6,7 +6,7 @@ import BooksComp from "../../comps/books";
 import { sortByDate } from "../../utils";
 
 export default function PostPage({ books }) {
-  const _category = ["All", "PEP", "Undergraduate", "Year 1"];
+  const _category = ["All", "PEP", "Undergraduate", "Advanced"];
 
   return (
     <div>

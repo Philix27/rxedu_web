@@ -63,7 +63,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className={styles.nav_start_list_item}>
-                <Link href="#">
+                <Link href="/blogs">
                   <a className={styles.link}>Blogs</a>
                 </Link>
               </li>

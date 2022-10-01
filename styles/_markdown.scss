@@ -13,10 +13,15 @@
     text-align: justify;
     text-justify: inter-word;
     margin: 10px 0;
+    color: rgb(55, 56, 57);
+    line-height: 1.6;
+    font-weight: 200;
   }
 
   ul {
     list-style: lower-alpha;
+    color: rgb(55, 56, 57);
+    font-weight: 200;
     ul {
       padding-left: 10px;
       list-style: circle;
@@ -28,5 +33,35 @@
 
   li {
     list-style: decimal;
+  }
+
+  ol {
+    color: rgb(55, 56, 57);
+    font-weight: 200;
+  }
+
+  table {
+    color: rgb(55, 56, 57);
+    font-weight: 200;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #e2effb;
+    }
+
+    th {
+      background-color: rgb(6, 116, 143);
+      color: white;
+      font-weight: 300;
+    }
+    // thead {
+    //   background-color: rgb(6, 116, 143);
+    //   color: white;
+    // }
   }
 }
