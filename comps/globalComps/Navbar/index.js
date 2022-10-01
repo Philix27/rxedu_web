@@ -68,7 +68,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className={styles.nav_start_list_item}>
-                <Link href="#">
+                <Link href="brands">
                   <a className={styles.link}>Find Drugs</a>
                 </Link>
               </li>

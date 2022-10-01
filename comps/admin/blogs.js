@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import Axios from "axios";
 
 export default function AdminBlogComp({ title }) {
-  const apiUrl = `https://rxedu-api.vercel.app/api/v1/news`;
+  const apiUrl = `https://rxedu-api.vercel.app/api/v1/blogs`;
 
   const [emptyField, setEmptyField] = useState(false);
   const [isSuccessful, setIsSuccessful] = useState(false);
@@ -12,6 +12,9 @@ export default function AdminBlogComp({ title }) {
     title: "",
     content: "",
     summary: "",
+    cateory: "All",
+    timePosted: Date(),
+    tags: ["All"],
   });
 
   function postArticle(_article) {
@@ -25,8 +28,9 @@ export default function AdminBlogComp({ title }) {
           setIsSuccessful(false);
         }, 5000);
       })
-      .catch(() => {
+      .catch((e) => {
         console.log("Opps an error ocured - Local");
+        console.log(e);
       });
   }
 

@@ -1,16 +1,10 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-// import Head from 'next/head'
-import BooksComp from "../../comps/books";
-import { sortByDate } from "../../utils";
-import ArticlesComp from "../../comps/articles/";
-import ArticlesCategory from "../../comps/articles/categories";
 import axios from "axios";
 import BlogComps from "../../comps/blogs/blogs";
 
 export default function BlogsPage({ contentsList }) {
   const _category = ["All", "PEP", "Undergraduate", "Year 1"];
+  console.log("Blogs Obj");
+  console.log(contentsList);
 
   return (
     <div>

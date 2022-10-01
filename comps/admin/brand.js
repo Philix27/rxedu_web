@@ -81,6 +81,7 @@ export default function AdminComp({ articleCategories, title }) {
               <option value="Consumable">Consumable</option>
               <option value="Gummies">Gummies</option>
               <option value="Cream">Cream</option>
+              <option value="Lotion">Gel</option>
               <option value="Lotion">Lotion</option>
               <option value="Powder">Powder</option>
               <option value="Suppository">Suppository</option>
