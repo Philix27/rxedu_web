@@ -12,6 +12,7 @@ export default function AdminBlogComp({ title }) {
     title: "",
     content: "",
     summary: "",
+    image: "g",
     cateory: "All",
     timePosted: Date(),
     tags: ["All"],

@@ -6,20 +6,14 @@ completed: true
 started: true
 ---
 
-<style type="text/css">
-    /* ul { list-style-type: upper-alpha; } */
-    /* p {font-style: italic;} */
-</style>
-
-# Logistic Management:-
+# Logistic Management
 
 ## Purpose of conducting logistics assessment:
 
 - Assess the entire system's strengths and weaknesses
-- Present the results of yourassessment to managers and - policymakers
+- Present the results of your assessment to managers and - policy makers
 - Present your recommendations for eliminating weaknesses
-- Propose an implementation Plan based on the
-  recommendations
+- Propose an implementation Plan based on the recommendations
 
 ## Reason for conducting logistics assessment
 
@@ -42,11 +36,9 @@ SC assessments are carried out for a number of reasons:
 5. Tools to assess readiness
 6. Assessment Tool for Lab Services (ATLAS)
 
-## Logistic/supply chain management REVISIONS
+# Introduction to Health Commodities Supply Chain
 
-This Topic is very very critical;-..
-
-# Introduction to Health Commodities Supply Chain;-
+---
 
 ### **Commodity Security (RH)**
 
@@ -55,12 +47,11 @@ commodity security exists when every person is able to choose,
 obtain, and use quality contraceptives and other essential reproductive health products whenever s/he needs them.
 Reproductive health commodity security exists
 when every person is able to choose, obtain, and use
-qualitycontraceptives and other essentialreproductive health products whenever s/
+quality contraceptives and other essential reproductive health products whenever s/
 he needs them.
 
-### There are Four Logistics pillars;-
+### There are Four Logistics pillars
 
-Please take note of this;-
 The Four Logistics Pillars include s, but not restricted to;-
 
 1. FORECAST: accurately estimate commodity requirements
@@ -82,106 +73,75 @@ In logistic and supply chain, management there is a pipeline of transfer & trans
 
 ### What is a Pipeline?
 
-💯Pipeline is the entire chain of physical storage facilities and transportation links throughwhich
+Pipeline is the entire chain of physical storage facilities and transportation links throughwhich
 supplies move from the manufacturer to the user, including the port facilities, central
 warehouse,regional warehouses,district warehouses, all SDP, and transport vehicles, including community-based distribution
 networks.
-[11/7, 8:28 PM] PharmahubNG▫️: 💯Okay
 
-Let's talk about "Lead Time" briefly
+### What is Lead Time?
 
-#What is Lead Time?
+Lead time is the time interval between when "new stock is ordered" and "when it is received" and available for use.
 
-• Lead time is the time interval between when
-"new stock is ordered" and "when it is received"
-and available for use.
+In Logistic, there is something called the push and pull systems of supply:
 
-In simple terms, it simply means the time You order that phone From jumia, and the time it will be available for Your use, so you unbox it on your YouTube channel😆😆😆
-[11/7, 8:36 PM] PharmahubNG▫️: In Logistic, there is something called the push and pull systems of supply;-
+**Push System:** (Allocation) means Quantities of goods to be issued are determined by personnel who issue the supplies.
 
-💯PUSH System  
-(Allocation) means;-
-Quantities of goods to be
-issued are
-determined by
-personnel who
-issue the supplies.
-For instance, if PharmahubNG wants drugs From Roche pharmaceuticals, after sending in my inventory list, Roche will reach out to me and say, sorry oh, we can't give 100 packs of labetalol, for now we only have 50, so thats push system of supply.
+**Pull system** (allocation): Quantities to be issued are determined by personnel who receive the supplies.
 
-💯Pull system (allocation);-
-Quantities to be issued are determined by
-personnel who receive the supplies.
-
-E.g ,if PharmahubNG wants 20 packs of Tothema from Innotech pharmaceuticals, if that 20 packs is not complete, we won't make payment to the company. that's what pull systems means😁😄😁
-.hope una understand
-[11/7, 8:46 PM] PharmahubNG▫️: 💯 Requisition;-
-
-Requisition means to Possess, supply, offer to supply or administer the drugs prescribed.
+**Requisition:** Requisition means to Possess, supply, offer to supply or administer the drugs prescribed.
 
 It has an advantage and disadvantage,
 
-Those in hospital setting understands this so well.
+Requisition Advantages/Disadvantages
 
-Let's take a Look;-
+- Advantage: Requisition systems are decentralized
+- Advantage: They place lower burden on upper level staff.
 
-Requisition Advantages/
-Disadvantages;-
+- Disadvantage: They require trained staff at the lower
+  levels- training more people, time consuming and costs
+  money.
+- Disadvantage: -They require service providers to spend more
+  time doing commodity management and filling out forms. Less time to serve clients.
 
-⚡Advantage: Requisition systems are decentralized
+There is something called Allocation too in supply chain;-
 
-⚡Disadvantage: They require trained staff at the lower
-levels- training more people, time consuming and costs
-money.
-
-⚡Advantage: They place lower burden on upper level staff.
-
-⚡Disadvantage: -They require service providers to spend more
-time doing commodity management and filling out forms
-
-- less time to serve clients.
-  [11/7, 8:50 PM] PharmahubNG▫️: 💯There is something called Allocation too in supply chain;-
-
-🚬Allocation (the point where supply meets demand) is one of the most important pieces of the supply chain. So many critical business processes— customer service, inventory, sales — start is hinged on smart allocation.
+- Allocation (the point where supply meets demand) is one of the most important pieces of the supply chain. So many critical business processes— customer service, inventory, sales — start is hinged on smart allocation.
 
 It has an Advantage and Also a Disadvantage in logistic;-..
 
 Allocation;-
 
-💯Advantage: Allocation systems require fewer
+Advantage: Allocation systems require fewer
 trained staff.
 
 🚬Disadvantage: BUT it then increases the workload of staff at the upper level (which is determining issue quantities for many facilities).
-[11/7, 8:57 PM] PharmahubNG▫️: 💯Lastly to round up this class tonight, let me draw an attention to a very important thing in logistic, it is "Data management"
+
+Data management
 
 Known as;-
-💯Dispensed –to-user VS Issues Data;-
+Dispensed –to-user VS Issues Data;-
 
 Information about the quantity of goods actually put in the hands of clients.
-(Often shortened to
-“dispensed data.”)
+(Often shortened to “dispensed data.”)
 
-💯Information about the quantity of goods shipped from one level of the system to another.(often known as Issued data)
+Information about the quantity of goods shipped from one level of the system to another.(often known as Issued data)
 
 Summarily;- it means for instance
-A client came to buy 10 packs of Clomid from your store, so you packed them and gave it to the client, that process is known as Dispensed to user,bcus you have not issued a receipt for the purchase,so, until you give a receipt and the goods together, and it is recorded in your ledger before it will become both "dispensed and issued Data"..
 
-I think we understand🙌🏻🙌🏻
-[11/7, 9:01 PM] PharmahubNG▫️: 💯so that will be all for the night, we will continue on Tuesday, for now it will be spaced class, that is why we are starting early...
+# LOGISTICS MANAGEMENT
 
-Expect some questions From this part, by Tomorrow🙌🏻
-[11/11, 7:06 PM] PharmahubNG▫️: #LOGISTICS MANAGEMENT
 INFORMATION SYSTEMS
 (LMIS);-
 
 A logistics management information system is a subset of organizations total information systems. It involves records and reports used to gather, analyze, and validate data from all levels of the logistics system that can be used to make logistics decisions and manage the supply chain.
-[11/11, 7:07 PM] PharmahubNG▫️: 💯The Purpose of LMIS#
+[11/11, 7:07 PM] PharmahubNG▫️: The Purpose of LMIS#
 
 • The purpose of LMIS is to collect,
 organize and present logistics data
 gathered across all levels of the
 system in order to make informed
 decision
-[11/11, 7:09 PM] PharmahubNG▫️: 💯Essential Data Items;-
+[11/11, 7:09 PM] PharmahubNG▫️: Essential Data Items;-
 
 #STOCK ON HAND:
 Quantities of usable stock available at any level or at all levels of the system at a point in time.
@@ -192,19 +152,19 @@ The average quantity of commodities dispensed to users during a particular time 
 #LOSSES/ADJUSTMENTS:
 Losses are the quantity of health commodities removed from the distributionsystem (e.g., losses, expiry, damage) Adjustments are receipt or issue of supplies to/from one facility to another at the same level
 (e.g., a transfer) or a correction for an error in counting
-[11/11, 7:12 PM] PharmahubNG▫️: 💯Activities that happen to supplies;-
+[11/11, 7:12 PM] PharmahubNG▫️: Activities that happen to supplies;-
 
 -Stored in Inventory.
 
 -Moved between facilities.
 
 -Dispensed-to-user/used
-[11/11, 7:14 PM] PharmahubNG▫️: 💯Types of Records;-
+[11/11, 7:14 PM] PharmahubNG▫️: Types of Records;-
 
 -Stockkeeping records.
 -Transaction records.
 -Consumption records.
-[11/11, 7:16 PM] PharmahubNG▫️: #💯Records:  
+[11/11, 7:16 PM] PharmahubNG▫️: #Records:  
 Records - forms
 on which data are
 collected and
@@ -212,18 +172,18 @@ remain at the
 facility where
 they are recorded.
 
-#💯Reports;- forms on which data are moved
+#Reports;- forms on which data are moved
 from one level in a
 logistics system to
 another.
-[11/11, 7:18 PM] PharmahubNG▫️: #💯Stockkeeping Records;-
+[11/11, 7:18 PM] PharmahubNG▫️: #Stockkeeping Records;-
 
 Used to record information about products in storage.
 
 Examples:
 -Bin Card (BN)
 -Inventory Control Card (ICC)
-[11/11, 7:22 PM] PharmahubNG▫️: #💯Stockkeeping Records Summary Points:-
+[11/11, 7:22 PM] PharmahubNG▫️: #Stockkeeping Records Summary Points:-
 
 Stockkeeping records are two kinds:
 
@@ -233,7 +193,7 @@ storeroom shelves/pallets,
 -Inventory control cards, generally have one per
 commodity, kept in ledger or book form, and kept in the product manager ’ s office.
 
-[11/11, 7:24 PM] PharmahubNG▫️: #💯Transaction Records:-
+[11/11, 7:24 PM] PharmahubNG▫️: #Transaction Records:-
 
 Used to record information about the movement of stock from one storage
 facility to another. They are proof of
@@ -243,7 +203,7 @@ Examples:
 -Commodities
 CRRIRF
 -Requisition and Issue Vouchers.
-[11/11, 7:25 PM] PharmahubNG▫️: 💯#Consumption Records:-
+[11/11, 7:25 PM] PharmahubNG▫️: #Consumption Records:-
 
 Use to record quantity of each product used
 by or dispensed to end users or used at an SDP when services are provided
@@ -251,14 +211,14 @@ Examples:
 -Daily Activity -Registers
 -Logs/tally/tick sheets
 -Treatment/Dispensing -register
-[11/11, 7:27 PM] PharmahubNG▫️: 💯Examples of Consumption records used
+[11/11, 7:27 PM] PharmahubNG▫️: Examples of Consumption records used
 in LMHC in Nigeria:-
 
 -ARV Drugs Daily Consumption -Record
 -Daily Usage -Record for HIV -Test Kits
 -OI Drugs Daily Consumption Record
 -Bin Card – for laboratory
-[11/11, 7:31 PM] PharmahubNG▫️: #💯The Six Right for LMIS:
+[11/11, 7:31 PM] PharmahubNG▫️: #The Six Right for LMIS:
 
 -The right data,
 -In the Right quantity
@@ -312,17 +272,17 @@ Storekeeper Decision Rule
 For example:
 Review all stock levels at the end of each quarter. Order enough stock to bring the stock levels up to 6 months.
 
-💯Definition of Review Period:
+Definition of Review Period:
 The Review Period is the time schedule for
 reviewing stock levels It is also time for ordering commodities, so in
 example both the review period and the order interval is quarterly
-[11/20, 6:45 AM] PharmahubNG▫️: 💯Definition of Emergency Order Point:
+[11/20, 6:45 AM] PharmahubNG▫️: Definition of Emergency Order Point:
 
 Emergency Order Point the stock level at which an emergency order should be placed
 to avoid a stock out whether the end of the Review Period has been reached EOP in Nigeria = 2 weeks (0.5 months)
 
 #Please take note#
-[11/20, 6:47 AM] PharmahubNG▫️: 💯#Storekeeper Decision Rule
+[11/20, 6:47 AM] PharmahubNG▫️: #Storekeeper Decision Rule
 (Forced Ordering Version with Emergency Order Point):-
 
 Review all stock levels at the end of each Review
@@ -336,7 +296,7 @@ If the stock level for any item falls below 1 month at any time, place an
 emergency order.
 
 #Take note#
-[11/20, 6:49 AM] PharmahubNG▫️: #⚡Formula for How Much to Order:-
+[11/20, 6:49 AM] PharmahubNG▫️: #- Formula for How Much to Order:-
 
 ## Max stock quantity – Stock on hand = order/issue quantity
 
@@ -349,7 +309,7 @@ stock level
 
 Average monthly consumption = average of the quantities of product dispensed to users or patients in the most recent three months, as appropriate
 
-## ⚡Steps in Setting Max-Min Levels:-
+## - Steps in Setting Max-Min Levels:-
 
 -Determine your Lead Time
 
@@ -476,7 +436,7 @@ Topic(5):
 Assessing Logistics System:
 
 http://www.slideshare.net/PrakashGhimire5/logistic-management-248313262?from_m_app=android
-💯What is the purpose of conducting
+What is the purpose of conducting
 logistics assessment:
 
 Assess the entire system's strengths and weaknesses
@@ -503,7 +463,7 @@ Reproductive health commodity security exists
 when every person is able to choose, obtain, and use
 qualitycontraceptives and other essentialreproductive health products whenever s/
 he needs them.
-[11/7, 8:24 PM] PharmahubNG▫️: 💯There are Four Logistics pillars;-
+[11/7, 8:24 PM] PharmahubNG▫️: There are Four Logistics pillars;-
 
 Please take note of this;-
 The Four Logistics Pillars include s, but not restricted to;-
@@ -518,7 +478,7 @@ resources
 products
 
 4). DELIVER…ensure reliable distribution to customers
-[11/7, 8:24 PM] PharmahubNG▫️: 💯why is Logistic management important? What is the purpose of logistic management in health/pharmaceutical care?
+[11/7, 8:24 PM] PharmahubNG▫️: why is Logistic management important? What is the purpose of logistic management in health/pharmaceutical care?
 
 Let's see,
 
@@ -536,15 +496,15 @@ The PURPOSE of a logistics system is to get the
 6). RIGHT COST.
 
 #take note
-[11/7, 8:24 PM] PharmahubNG▫️: 💯in logistic and supply chain, management there is a pipeline of transfer & transportation of goods and services, just like pipeline for oil transportation,so let's take a cursory look at them;-
+[11/7, 8:24 PM] PharmahubNG▫️: in logistic and supply chain, management there is a pipeline of transfer & transportation of goods and services, just like pipeline for oil transportation,so let's take a cursory look at them;-
 
 First of all, what is a Pipeline?
 
-💯Pipeline is the entire chain of physical storage facilities and transportation links throughwhich
+Pipeline is the entire chain of physical storage facilities and transportation links throughwhich
 supplies move from the manufacturer to the user, including the port facilities, central
 warehouse,regional warehouses,district warehouses, all SDP, and transport vehicles, including community-based distribution
 networks.
-[11/7, 8:28 PM] PharmahubNG▫️: 💯Okay
+[11/7, 8:28 PM] PharmahubNG▫️: Okay
 
 Let's talk about "Lead Time" briefly
 
@@ -558,7 +518,7 @@ In simple terms, it simply means the time You order that phone From jumia, and t
 
 [11/7, 8:36 PM] PharmahubNG▫️: In Logistic, there is something called the push and pull systems of supply;-
 
-💯PUSH System  
+PUSH System  
 (Allocation) means;-
 Quantities of goods to be
 issued are
@@ -567,13 +527,13 @@ personnel who
 issue the supplies.
 For instance, if PharmahubNG wants drugs From Roche pharmaceuticals, after sending in my inventory list, Roche will reach out to me and say, sorry oh, we can't give 100 packs of labetalol, for now we only have 50, so thats push system of supply.
 
-💯Pull system (allocation);-
+Pull system (allocation);-
 Quantities to be issued are determined by
 personnel who receive the supplies.
 
 E.g ,if PharmahubNG wants 20 packs of Tothema from Innotech pharmaceuticals, if that 20 packs is not complete, we won't make payment to the company. that's what pull systems means😁😄😁
 .hope una understand
-[11/7, 8:46 PM] PharmahubNG▫️: 💯 Requisition;-
+[11/7, 8:46 PM] PharmahubNG▫️: Requisition;-
 
 Requisition means to Possess, supply, offer to supply or administer the drugs prescribed.
 
@@ -586,19 +546,19 @@ Let's take a Look;-
 Requisition Advantages/
 Disadvantages;-
 
-⚡Advantage: Requisition systems are decentralized
+- Advantage: Requisition systems are decentralized
 
-⚡Disadvantage: They require trained staff at the lower
-levels- training more people, time consuming and costs
-money.
+- Disadvantage: They require trained staff at the lower
+  levels- training more people, time consuming and costs
+  money.
 
-⚡Advantage: They place lower burden on upper level staff.
+- Advantage: They place lower burden on upper level staff.
 
-⚡Disadvantage: -They require service providers to spend more
-time doing commodity management and filling out forms
+- Disadvantage: -They require service providers to spend more
+  time doing commodity management and filling out forms
 
 - less time to serve clients.
-  [11/7, 8:50 PM] PharmahubNG▫️: 💯There is something called Allocation too in supply chain;-
+  [11/7, 8:50 PM] PharmahubNG▫️: There is something called Allocation too in supply chain;-
 
 🚬Allocation (the point where supply meets demand) is one of the most important pieces of the supply chain. So many critical business processes— customer service, inventory, sales — start is hinged on smart allocation.
 
@@ -606,40 +566,40 @@ It has an Advantage and Also a Disadvantage in logistic;-..
 
 Allocation;-
 
-💯Advantage: Allocation systems require fewer
+Advantage: Allocation systems require fewer
 trained staff.
 
 🚬Disadvantage: BUT it then increases the workload of staff at the upper level (which is determining issue quantities for many facilities).
-[11/7, 8:57 PM] PharmahubNG▫️: 💯Lastly to round up this class tonight, let me draw an attention to a very important thing in logistic, it is "Data management"
+[11/7, 8:57 PM] PharmahubNG▫️: Lastly to round up this class tonight, let me draw an attention to a very important thing in logistic, it is "Data management"
 
 Known as;-
-💯Dispensed –to-user VS Issues Data;-
+Dispensed –to-user VS Issues Data;-
 
 Information about the quantity of goods actually put in the hands of clients.
 (Often shortened to
 “dispensed data.”)
 
-💯Information about the quantity of goods shipped from one level of the system to another.(often known as Issued data)
+Information about the quantity of goods shipped from one level of the system to another.(often known as Issued data)
 
 Summarily;- it means for instance
 A client came to buy 10 packs of Clomid from your store, so you packed them and gave it to the client, that process is known as Dispensed to user,bcus you have not issued a receipt for the purchase,so, until you give a receipt and the goods together, and it is recorded in your ledger before it will become both "dispensed and issued Data"..
 
 I think we understand🙌🏻🙌🏻
-[11/7, 9:01 PM] PharmahubNG▫️: 💯so that will be all for the night, we will continue on Tuesday, for now it will be spaced class, that is why we are starting early...
+[11/7, 9:01 PM] PharmahubNG▫️: so that will be all for the night, we will continue on Tuesday, for now it will be spaced class, that is why we are starting early...
 
 Expect some questions From this part, by Tomorrow🙌🏻
 [11/11, 7:06 PM] PharmahubNG▫️: #LOGISTICS MANAGEMENT
 INFORMATION SYSTEMS
 (LMIS);-
 
-A logistics management information system is a subset of organizations total information systems. It involves records and reports used to gather, analyze, and validate data from all levels of the logistics system that can be used to make logistics decisions and manage the supply chain. PharmahubNG▫️: 💯The Purpose of LMIS#
+A logistics management information system is a subset of organizations total information systems. It involves records and reports used to gather, analyze, and validate data from all levels of the logistics system that can be used to make logistics decisions and manage the supply chain. PharmahubNG▫️: The Purpose of LMIS#
 
 • The purpose of LMIS is to collect,
 organize and present logistics data
 gathered across all levels of the
 system in order to make informed
 decision
-▫️: 💯Essential Data Items;-
+▫️: Essential Data Items;-
 
 #STOCK ON HAND:
 Quantities of usable stock available at any level or at all levels of the system at a point in time.
@@ -650,19 +610,19 @@ The average quantity of commodities dispensed to users during a particular time 
 #LOSSES/ADJUSTMENTS:
 Losses are the quantity of health commodities removed from the distributionsystem (e.g., losses, expiry, damage) Adjustments are receipt or issue of supplies to/from one facility to another at the same level
 (e.g., a transfer) or a correction for an error in counting
-▫️: 💯Activities that happen to supplies;-
+▫️: Activities that happen to supplies;-
 
 -Stored in Inventory.
 
 -Moved between facilities.
 
 -Dispensed-to-user/used
-▫️: 💯Types of Records;-
+▫️: Types of Records;-
 
 -Stockkeeping records.
 -Transaction records.
 -Consumption records.
-▫️: #💯Records:  
+▫️: #Records:  
 Records - forms
 on which data are
 collected and
@@ -670,11 +630,11 @@ remain at the
 facility where
 they are recorded.
 
-#💯Reports;- forms on which data are moved
+#Reports;- forms on which data are moved
 from one level in a
 logistics system to
 another.
-▫️: #💯Stockkeeping Records;-
+▫️: #Stockkeeping Records;-
 
 Used to record information about products in storage.
 
@@ -682,7 +642,7 @@ Examples:
 -Bin Card (BN)
 -Inventory Control Card (ICC)
 
-▫️: #💯Stockkeeping Records Summary Points:-
+▫️: #Stockkeeping Records Summary Points:-
 
 Stockkeeping records are two kinds:
 
@@ -692,7 +652,7 @@ storeroom shelves/pallets,
 -Inventory control cards, generally have one per
 commodity, kept in ledger or book form, and kept in the product manager ’ s office.
 
-: #💯Transaction Records:-
+: #Transaction Records:-
 
 Used to record information about the movement of stock from one storage
 facility to another. They are proof of
@@ -703,7 +663,7 @@ Examples:
 -Commodities
 CRRIRF
 -Requisition and Issue Vouchers.
-: 💯#Consumption Records:-
+: #Consumption Records:-
 
 Use to record quantity of each product used
 by or dispensed to end users or used at an SDP when services are provided
@@ -711,14 +671,14 @@ Examples:
 -Daily Activity -Registers
 -Logs/tally/tick sheets
 -Treatment/Dispensing -register
-▫️: 💯Examples of Consumption records used
+▫️: Examples of Consumption records used
 in LMHC in Nigeria:-
 
 -ARV Drugs Daily Consumption -Record
 -Daily Usage -Record for HIV -Test Kits
 -OI Drugs Daily Consumption Record
 -Bin Card – for laboratory
-: #💯The Six Right for LMIS:
+: #The Six Right for LMIS:
 
 -The right data,
 -In the Right quantity
@@ -772,17 +732,17 @@ Storekeeper Decision Rule
 For example:
 Review all stock levels at the end of each quarter. Order enough stock to bring the stock levels up to 6 months.
 
-💯Definition of Review Period:
+Definition of Review Period:
 The Review Period is the time schedule for
 reviewing stock levels It is also time for ordering commodities, so in
 example both the review period and the order interval is quarterly
-▫️: 💯Definition of Emergency Order Point:
+▫️: Definition of Emergency Order Point:
 
 Emergency Order Point the stock level at which an emergency order should be placed
 to avoid a stock out whether the end of the Review Period has been reached EOP in Nigeria = 2 weeks (0.5 months)
 
 #Please take note#
-: 💯#Storekeeper Decision Rule
+: #Storekeeper Decision Rule
 (Forced Ordering Version with Emergency Order Point):-
 
 Review all stock levels at the end of each Review
@@ -796,7 +756,7 @@ If the stock level for any item falls below 1 month at any time, place an
 emergency order.
 
 #Take note#
-: #⚡Formula for How Much to Order:-
+: #- Formula for How Much to Order:-
 
 ## Max stock quantity – Stock on hand = order/issue quantity
 
@@ -810,7 +770,7 @@ stock level
 Average monthly consumption = average of the quantities of product dispensed to users or patients in the most recent three months, as appropriate
 
 #Take note of this Formular o#
-#⚡Steps in Setting Max-Min Levels:-
+#- Steps in Setting Max-Min Levels:-
 
 -Determine your Lead Time
 
@@ -908,17 +868,18 @@ problems with the product quality.
 -Every time products are received from the
 manufacturer (usually at the central level)
 
--Each time the warehouse or clinic receives supplies
+- Each time the warehouse or clinic receives supplies
 
--When conducting a physical inventory
+- When conducting a physical inventory
 
--When investigating complaints.
+- When investigating complaints.
 
--When supplies are about to expire
+- When supplies are about to expire
 
--When supplies show signs of damage..
+- When supplies show signs of damage..
 
-##Please take note of This
+## Please take note of This
+
 : 🔐What to look for when conducting
 Visual Inspection:-
 
@@ -933,15 +894,7 @@ Take note!!!!!!
 
 #Logistic Management:-
 
-Before our classes today, Kindly go through this slides, to get perfect knowledge of what we have been discussing.
-http://www.slideshare.net/PrakashGhimire5/logistic-management-248313262?from_m_app=android
-
-Topic(5):
-Assessing Logistics System:
-
-http://www.slideshare.net/PrakashGhimire5/logistic-management-248313262?from_m_app=android
-💯What is the purpose of conducting
-logistics assessment:
+Before our classes today, Kindly go through this slides, to get perfect knowledge of what What is the purpose of conducting logistics assessment:
 
 Assess the entire system's strengths and weaknesses
 Present the results of yourassessment to managers and policymakers

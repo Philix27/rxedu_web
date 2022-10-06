@@ -4,6 +4,8 @@
   h1 {
     font-size: 2.8rem;
     font-weight: 300;
+    padding-top: 20px;
+    // padding-bottom: 0px;
   }
   h3 {
     padding: 10px 0;
@@ -19,25 +21,26 @@
   }
 
   ul {
-    list-style: lower-alpha;
+    // list-style: lower-alpha;
     color: rgb(55, 56, 57);
     font-weight: 200;
-    ul {
-      padding-left: 10px;
-      list-style: circle;
-      li {
-        list-style: circle;
-      }
+    padding: 5px;
+    li {
+      list-style: disc;
+      padding: 5px;
+      // line-height: 1.8;
+      margin-left: 20px;
     }
-  }
-
-  li {
-    list-style: decimal;
   }
 
   ol {
     color: rgb(55, 56, 57);
     font-weight: 200;
+    li {
+      list-style: decimal;
+      padding: 5px;
+      margin-left: 20px;
+    }
   }
 
   table {
@@ -63,5 +66,9 @@
     //   background-color: rgb(6, 116, 143);
     //   color: white;
     // }
+  }
+
+  hr {
+    margin-bottom: 10px;
   }
 }
