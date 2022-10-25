@@ -1,0 +1,49 @@
+.clanding {
+  height: 70vh;
+  padding: 0 0.5rem;
+  display: grid;
+  align-items: center;
+  /* grid-template-columns: repeat(1, 1fr); */
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #4642f8; */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /* background-image: linear-gradient(rgba(163, 166, 177, 0.5), rgba(4,9,30,0.5)), url(../../public/hc.jpg); */
+  background-image: linear-gradient(
+      rgba(15, 22, 51, 0.685),
+      rgba(2, 4, 14, 0.5)
+    ),
+    url(../public/images/exam.jpg);
+
+  .subtitle {
+    font-size: smaller;
+    color: aliceblue;
+    padding: 25px 0;
+  }
+
+  @include tabletSS {
+    height: 70vh;
+    grid-template-columns: repeat(1, 1fr);
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+        rgba(15, 22, 51, 0.685),
+        rgba(2, 4, 14, 0.5)
+      ),
+      url(../public/images/exam.jpg);
+  }
+
+  @include mobileSS {
+    grid-template-columns: repeat(1, 1fr);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(
+        rgba(15, 22, 51, 0.685),
+        rgba(2, 4, 14, 0.5)
+      ),
+      url(../public/images/exam.jpg);
+  }
+}

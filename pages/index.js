@@ -1,4 +1,4 @@
-import HomeLanding from "../comps/HomeComps/Landing/Landing";
+import HomeLanding from "../comps/HomeComps/Landing";
 import Objectives from "../comps/HomeComps/objectives";
 import Courses from "../comps/HomeComps/courses";
 import Packages from "../comps/HomeComps/packages";

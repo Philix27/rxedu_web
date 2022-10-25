@@ -63,23 +63,19 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className={styles.nav_start_list_item}>
-                <Link href="/blogs">
-                  <a className={styles.link}>Blogs</a>
+                <Link href="/courses">
+                  <a className={styles.link}>Courses</a>
                 </Link>
               </li>
-              <li className={styles.nav_start_list_item}>
-                <Link href="brands">
-                  <a className={styles.link}>Find Drugs</a>
-                </Link>
-              </li>
-              <li className={styles.nav_start_list_item}>
+
+              {/* <li className={styles.nav_start_list_item}>
                 <Link href="/admin">
                   <a className={styles.link}>Admin</a>
                 </Link>
-              </li>
+              </li> */}
               <li className={styles.nav_start_list_item}>
-                <Link href="/brands">
-                  <a className={styles.link}>Brand</a>
+                <Link href="/pricing">
+                  <a className={styles.link}>Pricing</a>
                 </Link>
               </li>
             </ul>

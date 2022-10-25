@@ -3,13 +3,10 @@ import Link from "next/link";
 import Axios from "axios";
 import { CardItem, GridContainer, IndexSpan } from "../quiz/styles";
 import { AddQuestionBtn } from "./addQuestionBtn";
-import { Modal } from "../articles/Modal/Modal";
-import { ModalContent } from "./modal_content";
 
 const QuizCategory = ({ apiCategory }) => {
   const apiurlLocal = `${process.env.NEXT_PUBLIC_API_URL}${apiCategory}`;
   const [quizList, setQuizList] = useState([]);
-  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     Axios.get(apiurlLocal)
